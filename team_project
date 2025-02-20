@@ -1,1 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M05 - Module Group Detail Assignment</title>
+</head>
+<body>
+  <header>
+    <h1>Ember Ceramics</h1>
+  </header>
+<h3>Project Description:  Pottery Studio Website</h3>
+</h3>Website represents: Ember Ceramic</h3> 
+</h3>Website Design and Developer Team: Natalia Lubskaya, Yevgeniy Mazur, Isaac Mayala</h3>
+  <ul>
+    <li>Natalia Lubskaya- team lead,project manager, development</li>
+    <li>Yevgeniy Mazur- design and development </li>
+    <li>Isaac Mayala-design and development</li>
+  </ul>
+<h3>Purpose/Website Description:</h3> An online presence that represent and celebrates the art of pottery through both creation 
+  and education. The site seamlessly integrates e-commerce functionality with interactive learning experiences and engage with the likeminded community of artist creative and curios individuals 
+  and provide place to explore the art of ceramic. 
+  <ol><li>
+	Shop
+	<ul>
+		<li>
+	      Handcrafted pottery collection
+		</li> <li>
+	      Holiday special items
+		</li> <li>
+	      Custom order requests
+	        </li> <li>
+	      Gift certificates
+	        </li> 
+	</ul>
+      </li><li>
+Learning Center
+        <ul>
+	      <li>
+	      Class schedules and registration  
+	      </li> <li>
+	      Online pottery courses/ Artist demonstrations  
+	      </li> <li>
+	      Tutorial videos  
+	      	
+			    <ul><li>
+	       Tips and techniques  </li> <li>
+	       Artist demonstrations  </li> <li>
+	       Work-in-progress videos
+	                </li></ul>
+		</li>
+	      </ul>
+      </li><li>
+Studio Services 
+        <ul>
+	      <li>
+	      Pottery painting parties
+	      </li> <li>
+	      Private events
+	      </li> <li>
+	      Team building workshops
+	      </li> <li>
+	      Birthday celebrations
+	                </li> 
+      </ul>
+      </li><li>
+Artist Gallery/Shop
+        <ul>
+	      <li>
+	      Featured works
+	      </li> <li>
+	      Artist profiles/ Work-in-progress videos
+	      </li> <li>
+	      Behind-the-scenes content
+	        </li> 
+      	</ul>
+      </li>
+    </ol>
+<h3>Target Audience:</h3>
+<h4>Primary Audiences:</h4>
+    <ol>
+            <li>Creative Enthusiasts (25-65)</li>
+            <ul>
+                <li>Interested in hands-on creative activities and learning how to do pottery</li>
+                <li>Handmade items/Appreciate artistic experiences</li>
+                <li>Seeking new hobbies</li>
+            </ul>
+        </li>
 
+        <li>Parents (30-45)
+            <ul>
+                <li>Looking for creative activities for children</li>
+                <li>Planning birthday parties</li>
+                <li>Interested in family-friendly experiences</li>
+                <li>Value educational entertainment</li>
+            </ul>
+        </li>
+
+        <li>
+            Art Students/Aspiring Artists (18-30)
+            <ul>
+                <li>Seeking to develop pottery skills</li>
+                <li>Interested in techniques and tutorials</li>
+                <li>Want to learn from experienced artists</li>
+                <li>Looking for workspace and community</li>
+            </ul>
+        </li>
+
+        <li>
+            Gift Shoppers (25-60)</li>
+            <ul>
+                <li>Seeking unique, handmade items</li>
+                <li>Value artisanal products</li>
+                <li>Looking for special occasion gifts or customized make-to-order ceramic products</li>
+            </ul>
+        </li>
+    </ol>
+    
+        <h4>Secondary Audiences</h4>
+
+       <ol>
+            <li>Corporate Event Planners
+            <ul>
+                <li>Seeking team-building activities</li>
+                <li>Planning corporate gifts</li>
+                <li>Looking for unique event venues</li>
+            </ul>
+        </li>
+
+        <li>Interior Designers
+            <ul>
+                <li>Sourcing unique decorative pieces</li>
+                <li>Looking for custom commissioned work</li>
+                <li>Interested in bulk orders</li>
+            </ul>
+        </li>
+
+         <li>Collectors (40-65)
+            <ul>
+                <li>Appreciate fine craftsmanship</li>
+                <li>Invest in artisanal pieces</li>
+                <li>Follow specific artists</li>
+            </ul>
+        </li>
+
+        <li>Educational Institutions
+            <ul>
+                <li>Art teachers seeking resources</li>
+                <li>Schools planning field trips</li>
+                <li>Educational program coordinators</li>
+            </ul>
+		</li>
+	</ol>
+<h4>Website navigation: 6-9 pages</h4>
+<ol><li>
+Home Page: index.html<br>
+    Home page: first page to intro the pottery studio- 1 - 3 images <br>
+  <h5>Main Navigation pages</h5>
+	<ol><li>
+Our Studio- about.html- about studio and its services ( 1&2 can be combined together considering with the team)
+	</li>
+        <li>
+ Studio Services-workshops.html-about studio teaching workshop
+		  <ol>
+                <li>
+    Link to already existing pages for classes, custom orders, party reservations, online shopping.
+		</li>
+		  </ol>
+	</li>
+        <li>
+Gallery & Shops- gallery.html- Reflect available Items-  30 images
+		 <ol>
+                	<li>
+  			shop_order.html- child page to generate purchase
+			</li>
+		 	<li>
+    			Custom order form- cusom_order.html- form to place order for custom item
+			</li>
+		 	<li>
+    			Events Calendar – calendar.html reflect list of all the events hold by the studio
+			</li>
+		 	<li>
+    			Learning Center- learning.html
+			</li>
+		  </ol>
+	</li>
+        <li>
+	Classes-classes.html- gallery of available classes
+		<ol><li>
+    		class_detailes.html -class selected details
+		</li></ol>
+	</li>
+        <li>
+	Tips and online videos- tips.html-gallery of available recordings
+		<ol><li>
+    		Classes recordings, Video recordings of teacher’s demos, artist at work, tips for various topics on pottery and clay work.  
+		</li></ol>
+	</li>
+        <li>
+	Reservations-reserve.html page to make reservations for the class/s , reserve studio for the party or event
+	</li>
+        <li>
+	FAQ + Ressources-faq.html
+	</li>
+        <li>
+	Contact & Location-contact.html<ol><li>
+    	Contact information and social media presence 
+	</li></ol>
+	</li></ol>
+</li><li>
+	Footer.html
+		<ul><li>
+      	Contact & Location</li><li>
+      	Online presence/ Instagram/ Facebook/ other social media
+		</li></ul>	
+</li><li>
+	Nav.html- Main navigation for the site
+</li><li>
+Style.CSS- look and feel for the website
+</li><li>
+Scripts.js- javascript content for the site
+	</li>
+</ol>
+<h4>Color Pallet :</h4>
+  <ul>
+    <li>F7EEDD</li>
+    <li>C4B7A5</li>
+    <li>C08865</li>
+    <li>F6EDDA</li>
+    <li>9D6142</li>
+  </ul>
+
+</body>
+</html>
