@@ -10,6 +10,22 @@ body
     display: flex;
     flex-direction: column;
 }
+
+/* Roles and Responsibilities Styles */
+.iteration-section {
+    margin-bottom: 2rem;
+}
+
+.roles-responsibilities {
+    display: flex;
+    gap: 1rem; /* Adjust gap as needed */
+    flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+}
+
+.role-column {
+    flex: 1; /* Each column takes equal width */
+    min-width: 300px; /* Minimum width for each column */
+}
 /* Navigation Styles links N*/
 .navbar 
 {
