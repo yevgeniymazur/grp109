@@ -274,3 +274,33 @@ select {
 .survey-nav-buttons button:hover {
   background-color: #006666;
 }
+
+/*this code only for natalia selection for js selection starts here*/
+        .containerNL {
+            max-width: 500px;
+            margin: 10px auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .date-list {
+            margin-top: 10px;
+        }
+        .available {
+            color: green;
+            margin: 10px 0;
+        }
+        .unavailable {
+            color: red;
+            margin: 10px 0;
+        }
+        select {
+            padding: 5px;
+            margin-bottom: 15px;
+            width: 200px;
+        }
+        #dateContainerNL {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-top: 15px;
+        }
+/*natalia css for the data box ends here*/
