@@ -1,11 +1,10 @@
 /* Reset and Base Styles */
-body 
-{
+body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     /*background-image:url("/images/image22.JPG");*/
     background-position: right top;
-    background-size: cover; 
+    background-size: cover;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -98,6 +97,27 @@ img.artImage22
     color: #777;
     font-weight: 200;
     transition: color 0.3s ease;
+}
+
+/* Isaac's Simple JS Styles */
+#container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#message {
+    margin-top: 20px;
+    font-weight: bold;
 }
 
 /* Main Content Styles Welcome to My Portfolio section N*/
