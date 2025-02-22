@@ -1,4 +1,6 @@
- document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+// Isaac M Feedback Survey
+
+document.getElementById('feedbackForm').addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent default form submission
 
             const name = document.getElementById('name').value;
