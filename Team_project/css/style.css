@@ -13,6 +13,10 @@ body {
 /* Roles and Responsibilities Styles */
 .iteration-section {
     margin-bottom: 2rem;
+    border: 1px solid #ddd; /* Added border */
+    padding: 1rem; /* Added padding */
+    border-radius: 8px; /* Added border radius */
+    background-color: #f9f9f9; /* Added background color */
 }
 
 .roles-responsibilities {
