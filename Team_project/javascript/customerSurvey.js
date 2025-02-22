@@ -144,7 +144,7 @@ function renderQuestion() {
       } else {
         console.log("Survey Answers:", surveyAnswers);
         // Redirect to a thank-you page after survey completion
-        window.location.href = "thankyou.html";
+        window.location.href = "progressReport/index.html";
       }
     }
   });
