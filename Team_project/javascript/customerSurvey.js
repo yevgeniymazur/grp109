@@ -144,7 +144,7 @@ function renderQuestion() {
       } else {
         console.log("Survey Answers:", surveyAnswers);
         // Redirect to a thank-you page after survey completion
-        window.location.href = "https://yevgeniymazur.github.io/grp109/Team_project/output/index.html";
+        window.location.href = "google.com";
       }
     }
   });
