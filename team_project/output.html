@@ -27,9 +27,18 @@
                 <h2>Thank you for your feedback</h2>
                 <p>If you have any questions feel free to calls us at 1-800-555-3535	
 		</p>
+		<div id="smiley-display"></div>
             </section>
 
         </div>
     </main>
+	<script>
+        // Retrieve and display the smiley face
+        const smiley = localStorage.getItem('smileyResponse');
+        if (smiley) {
+            document.getElementById('smiley-display').textContent = smiley;
+            localStorage.removeItem('smileyResponse'); // Clear the stored data
+        }
+    </script>
 </body>
 </html>
