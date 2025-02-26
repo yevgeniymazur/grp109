@@ -6,3 +6,9 @@ document.getElementById('myButton').addEventListener('click', function() {
     // Redirect to the output page
     window.location.href = 'output.html';
 });
+  // Retrieve and display the smiley face
+        const smiley = localStorage.getItem('smileyResponse');
+        if (smiley) {
+            document.getElementById('smiley-display').textContent = smiley;
+            localStorage.removeItem('smileyResponse'); // Clear the stored data
+        }
