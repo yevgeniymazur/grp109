@@ -1,4 +1,4 @@
-//clickButton Isaac M
+// clickButton Isaac M
 document.getElementById('myButton').addEventListener('click', function() {
     // Store the smiley face in local storage
     localStorage.setItem('smileyResponse', '😊');
