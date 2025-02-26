@@ -1,4 +1,8 @@
 //clickButton Isaac M
 document.getElementById('myButton').addEventListener('click', function() {
-            document.getElementById('message').textContent = 'Thank you for your submission!';
-        });
+    // Store the smiley face in local storage
+    localStorage.setItem('smileyResponse', '😊');
+
+    // Redirect to the output page
+    window.location.href = 'output.html';
+});
