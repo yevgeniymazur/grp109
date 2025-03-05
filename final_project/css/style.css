@@ -77,10 +77,72 @@ button {
     flex: 1; /* Each column takes equal width */
     min-width: 300px; /* Minimum width for each column */
 }
-/* Navigation Styles links N*/
+/* Dropdown Navigation style Styles NL sample
+/////////////////////////////////////////////////*/
+        .nav-links .dropdown {
+            position: relative;
+        }
+
+        .nav-links .dropdown-toggle {
+            cursor: pointer;
+            position: relative;
+        }
+
+        .nav-links .dropdown-toggle::after {
+            content: ' ▼';
+            font-size: 0.7em;
+            margin-left: 5px;
+        }
+
+        .nav-links .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #F5EAE4;
+            min-width: 200px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+            border-radius: 4px;
+            padding: 10px 0;
+        }
+
+        .nav-links .dropdown:hover .dropdown-menu,
+        .nav-links .dropdown-menu.show {
+            display: block;
+        }
+
+        .nav-links .dropdown-menu a {
+            display: block;
+            padding: 10px 15px;
+            color: #666;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-links .dropdown-menu a:hover {
+            background-color: #f0f0f0;
+            color: #007bff;
+        }
+
+        /* Mobile Responsive Styles */
+        @media (max-width: 768px) {
+            .nav-links .dropdown-menu {
+                position: static;
+                display: none;
+                background-color: #f9f9f9;
+                box-shadow: none;
+            }
+
+            .nav-links .dropdown-menu.show {
+                display: block;
+            }
+        }
+/*////////////////////////end of drop down navigation style/////////////////////////*/
+/* ///////////////////////Navigation Styles links N option 1 no drop down////////////////////*/
 .navbar 
 {
-    background-color: #E2EAF4;
+    background-color: #F5EAE4;
     padding: 1rem 2rem;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 	position: sticky;
@@ -90,7 +152,7 @@ button {
 	font-family: 'ArchivoNarrowRegular';
     font-size: 1.5rem;
     font-weight: bold;
-    color: #5B5983;
+    color: #82370C;
     margin-bottom: 1rem;
 }
 .nav-links {
@@ -109,11 +171,11 @@ button {
 .nav-links a:hover,
 .nav-links a.active
 {
-    color: #007bff;
+    color: #5A2506;
 }
 img.artImage
 {
-	box-shadow: 4px 4px 4px #999;
+  box-shadow: 4px 4px 4px #999;
   transition: all 200ms ease-in-out;
   width: 300px;
   height: auto;
@@ -121,10 +183,10 @@ img.artImage
 /* validation page images style*/
 img.artImage2
 {
-	box-shadow: 4px 4px 4px #999;
-  transition: all 200ms ease-in-out;
-  width: 400px;
-  height: auto;
+ box-shadow: 4px 4px 4px #999;
+ transition: all 200ms ease-in-out;
+ width: 400px;
+ height: auto;
 }
 /* hobby images style*/
 img.artImage22
