@@ -25,16 +25,16 @@ function createCalendar() {
     
     // Create inner elements: day number and marker.
     let dayDiv = document.createElement('div');
-    dayDiv.className = 'day-number';
+    dayDiv.className = 'rc-day-number';
     dayDiv.textContent = date.getDate();
     cell.appendChild(dayDiv);
 
     let markerDiv = document.createElement('div');
-    markerDiv.className = 'marker';
+    markerDiv.className = 'rc-marker';
 
     // Determine if the day should be closed:
-    //  - If the day of the month is 3 or 24.
-    //  - Every second Sunday is closed.
+    // - If the day of the month is 3 or 24.
+    // - Every second Sunday is closed.
     let closed = false;
     if (date.getDate() === 3 || date.getDate() === 24) {
       closed = true;
@@ -48,13 +48,9 @@ function createCalendar() {
 
     if (closed) {
       cell.dataset.type = "closed";
-      cell.classList.add('closed');
+      cell.classList.add('rc-closed');
       // Set marker text based on whether it's a Sunday closure or not.
-      if (date.getDay() === 0) {
-        markerDiv.textContent = "Closed for Kiln Firing";
-      } else {
-        markerDiv.textContent = "Closed";
-      }
+      markerDiv.textContent = date.getDay() === 0 ? "Closed for Kiln Firing" : "Closed";
     } else {
       // Normal logic for non-closed cells:
       if (date.getDay() === 6) {
@@ -77,11 +73,10 @@ function createCalendar() {
         markerDiv.textContent += " - " + cell.dataset.spots + " spots available";
       }
       // Mark the cell as available and attach a click listener.
-      cell.classList.add('available');
+      cell.classList.add('rc-available');
       cell.addEventListener('click', () => openReservationForm(cell));
     }
     cell.appendChild(markerDiv);
-
     row.appendChild(cell);
 
     if (date.getDay() === 6) { // End the row on Saturday.
@@ -103,7 +98,7 @@ function createCalendar() {
 // Open the reservation form for the selected cell.
 function openReservationForm(cell) {
   // Do not open the form if the cell is not available.
-  if (!cell.classList.contains('available')) return;
+  if (!cell.classList.contains('rc-available')) return;
   currentCell = cell;
   const form = document.getElementById('reservation-form');
   const formTitle = document.getElementById('form-title');
@@ -244,13 +239,13 @@ document.getElementById("res-form").addEventListener("submit", (e) => {
     let remaining = available - reserved;
     if (remaining <= 0) {
       currentCell.dataset.spots = 0;
-      currentCell.classList.remove("available");
-      currentCell.classList.add("full");
-      const marker = currentCell.querySelector(".marker");
+      currentCell.classList.remove("rc-available");
+      currentCell.classList.add("rc-full");
+      const marker = currentCell.querySelector(".rc-marker");
       if (marker) marker.textContent = "FULL";
     } else {
       currentCell.dataset.spots = remaining;
-      const marker = currentCell.querySelector(".marker");
+      const marker = currentCell.querySelector(".rc-marker");
       const classType = formData.get("classType");
       if (classType) {
         currentCell.classList.add(classType.toLowerCase());
@@ -259,11 +254,11 @@ document.getElementById("res-form").addEventListener("submit", (e) => {
     }
   } else if (currentCell.dataset.type === "party") {
     // For party reservations, simply update marker text.
-    const marker = currentCell.querySelector(".marker");
+    const marker = currentCell.querySelector(".rc-marker");
     marker.textContent = "Events/Party";
   } else if (currentCell.dataset.type === "exhibit") {
     // For exhibit reservations, simply update marker text.
-    const marker = currentCell.querySelector(".marker");
+    const marker = currentCell.querySelector(".rc-marker");
     marker.textContent = "Exhibit";
   }
   alert("Reservation submitted!");
@@ -271,3 +266,4 @@ document.getElementById("res-form").addEventListener("submit", (e) => {
 });
 
 createCalendar();
+
