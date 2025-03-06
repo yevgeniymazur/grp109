@@ -456,3 +456,101 @@ select {
             margin-top: 15px;
         }
 /*natalia css for the data box ends here*/
+/* ym css for calendar */
+/* Calendar Container Styles */
+.calendar-container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Calendar Table Styles */
+table.calendar {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+table.calendar th,
+table.calendar td {
+  border: 1px solid #ccc;
+  width: 14.28%;
+  height: 100px;
+  vertical-align: top;
+  padding: 5px;
+  position: relative;
+}
+
+table.calendar th {
+  background: #f0f0f0;
+}
+
+/* Namespaced Calendar Cell States */
+td.rc-available {
+  background-color: lightgreen;
+  cursor: pointer;
+}
+td.rc-full {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+td.rc-closed {
+  background-color: #888;
+  cursor: not-allowed;
+  color: #fff;
+  border: 2px solid red;
+}
+
+/* Earthy Tone for Exhibit Cells */
+td[data-type="exhibit"] {
+  background-color: burlywood;
+}
+
+/* Reservation Form Styling (unchanged) */
+.reservation-form {
+  display: none;
+  margin: 20px auto;
+  padding: 15px;
+  border: 1px solid #ccc;
+  width: 50%;
+  background: #f9f9f9;
+  text-align: left;
+}
+.reservation-form.active {
+  display: block;
+}
+.reservation-form label {
+  display: block;
+  margin-top: 10px;
+}
+.reservation-form input,
+.reservation-form select {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+.reservation-form button {
+  margin-top: 10px;
+  padding: 8px 12px;
+}
+
+/* Namespaced Inner Calendar Elements */
+.rc-day-number {
+  font-weight: bold;
+}
+.rc-marker {
+  margin-top: 5px;
+  font-size: 0.9em;
+}
+
+/* Color Coordination for Class Levels */
+.beginner {
+  background-color: lightblue !important;
+}
+.intermediate {
+  background-color: khaki !important;
+}
+.advanced {
+  background-color: lightcoral !important;
+}
+/* YM end of code*/
