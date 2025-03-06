@@ -121,8 +121,8 @@ button {
         }
 
         .nav-links .dropdown-menu a:hover {
-            background-color: #f0f0f0;
-            color: #007bff;
+            background-color: #D7C5C5;
+            color: #362424;
         }
 
         /* Mobile Responsive Styles */
@@ -167,12 +167,22 @@ button {
     font-weight: 500;
     transition: color 0.3s ease;
 }
-/*style for main nav when it is mouse over*/
+/*style for links when it is mouse over
 .nav-links a:hover,
 .nav-links a.active
 {
     color: #5A2506;
 }
+*/
+/* footer social links*/
+.social
+{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;  /* Adjust the space between images */
+    margin-right: 20px;  /* Adjust the right margin if needed */
+}
+
 img.artImage
 {
   box-shadow: 4px 4px 4px #999;
