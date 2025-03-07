@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Ember Ceramic</title>
-<link rel="stylesheet" media="screen" href="https://fontlibrary.org/en/face/archivo-narrow" type="text/css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/en/face/archivo-narrow" type="text/css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
- <script src="script/navigation.js"></script>
+    <script src="script/navigation.js"></script>
     <!-- Navigation Section -->
     <nav class="navbar">
         <div class="nav-brand">Ember Ceramic</div>
@@ -17,8 +17,8 @@
             <li class="dropdown">
                 <a href="aboutstudio.html" class="dropdown-toggle">Our Studio</a>
                 <div class="dropdown-menu">
-                    <a class="nav-links" href="about_team.html">Our Team</a>
-                    <a class="nav-links" href="about_contact.html">Contact</a>
+                    <a href="about_team.html">Our Team</a>
+                    <a href="about_contact.html">Contact</a>
                     <a href="about_faq.html">FAQ</a>
                 </div>
             </li>
@@ -28,8 +28,8 @@
                 <div class="dropdown-menu">
                     <a href="classes.html">Classes</a>
                     <a href="party_events.html">Party & Events</a>
-                    <a href="coustom_orders.html">Coustom Orders</a>
-					<a href="tips.html">Learn</a>
+                    <a href="coustom_orders.html">Custom Orders</a>
+                    <a href="tips.html">Learn</a>
                 </div>
             </li>
             
@@ -46,40 +46,100 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to Ember Ceramic</h1>
+        <p class="subtitle">A vibrant community pottery studio in the heart of Seattle</p>
+    </section>
+    
     <!-- Main Content Section -->
-    <main class="main-content">
-        <div class="content-container">
-            <h1>Our Studio</h1>
-            <p>
-			Based in Seattle, Ember Ceramic is owned and operated by a group of artists. They offer a variety of clay classes, including hand-building and wheel-throwing techniques, and host various events. Offer classes, memberships, workshops, and events. We also provide options for private classes and corporate group events. We offer 24/7 access to the facilities for members. 
+    <main class="content">
+        <!-- About Section -->
+        <section class="about-me">
+            <h2>Our Studio</h2>
+            <div class="profile-content">
+                <div class="profile-text">
+                    <p>Based in Seattle, Ember Ceramic is owned and operated by a group of passionate artists. We offer a variety of clay classes, including hand-building and wheel-throwing techniques, and host various creative events throughout the year.</p>
+                    <p>Our studio provides classes, memberships, workshops, and special events. We also offer options for private classes and corporate group events, with 24/7 access to our facilities for members.</p>
+                </div>
+            </div>
+        </section>
 
-			</p>
-            <section class="content-section">
-                <h2>A Place to make art</h2>
-                <p>
-What better place to make clay art than an old brick building nestled in a park full of old growth trees, beaches and wildlife? Seward Park Clay Studio has been incorporated as a non-profit educational ceramics institution and run by a Board of directors since 1986.</p>
+        <!-- Features Section -->
+        <section class="skills">
+            <h2>What We Offer</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <h3>Classes & Workshops</h3>
+                    <p>From beginner to advanced, our classes cater to all skill levels. Learn wheel-throwing, hand-building, and glazing techniques.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Studio Memberships</h3>
+                    <p>Enjoy 24/7 access to our facilities, equipment, and glazes with our flexible membership options.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Private Events</h3>
+                    <p>Host your next team building event, birthday party, or special occasion in our inspiring creative space.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Custom Orders</h3>
+                    <p>Commission our talented artists to create bespoke ceramic pieces for your home or business.</p>
+                </div>
+            </div>
+        </section>
 
-            </section>
-        </div>
-    <!-- Footer -->
+        <!-- Location Section -->
+        <section class="about-me">
+            <h2>A Place to Make Art</h2>
+            <div class="profile-content">
+                <div class="profile-text">
+                    <p>What better place to make clay art than an old brick building nestled in a park full of old growth trees, beaches and wildlife? Ember Ceramic has been a cornerstone of the local arts community since 1986, incorporated as a non-profit educational ceramics institution and run by a dedicated Board of directors.</p>
+                    <p>Our studio provides a serene and inspiring environment where creativity can flourish. Join our community of artists and discover the joy of working with clay.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="iteration-section">
+            <h2>Start Your Ceramic Journey Today</h2>
+            <div class="roles-responsibilities">
+                <div class="role-column">
+                    <p>Ready to get your hands dirty? Check out our class schedule or visit our studio to learn more about memberships and upcoming events.</p>
+                    <button>View Class Schedule</button>
+                </div>
+                <div class="role-column">
+                    <div class="form-container">
+                        <h3>Stay Updated</h3>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Your email">
+                        </div>
+                        <button>Subscribe to Newsletter</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <!-- Footer -->
     <footer>
-        <br><div class="foot-links">
+        <div class="foot-links">
             <a href="index.html">Home</a> |
-            <a href="aboutstudio.html- ">Our Studio</a> |
-            <a href="services.html-">Studio Services</a> |
+            <a href="aboutstudio.html">Our Studio</a> |
+            <a href="services.html">Studio Services</a> |
             <a href="gallery_shop.html">Gallery & Shop</a> |
-            <a href="calendar.html">Studio Calendar</a> |
+            <a href="calendar.html">Studio Calendar</a>
+        </div>
         <br>© 2025 Ember Ceramic. All rights reserved.<br>
-	</div>
-			<div class="social">
-				<a href="https://www.facebook.com/pottery" target="_blank">
-				<img src="images/icons/icon-facebook.png" alt="facebook icon"></a>
-				<a href="https://www.pinterest.com/" target="_blank">
-				<img src="images/icons/icon-pinterest.png" alt="interest icon"></a>
-				<a href="https://www.instagram.com/" target="_blank">
-				<img src="images/icons/icon-twitter.png" alt="instagram icon"></a>
-			</div>
+        <div class="social">
+            <a href="https://www.facebook.com/" target="_blank">
+            <img src="images/https://github.com/yevgeniymazur/grp109/blob/main/final_project/images/Facebook%20icon.png" alt="Facebook icon"></a>
+            <a href="https://www.pinterest.com/" target="_blank">
+            <img src="images/https://github.com/yevgeniymazur/grp109/blob/main/final_project/images/Pintrest%20icon.png" alt="Pinterest icon"></a>
+            <a href="https://www.instagram.com/" target="_blank">
+            <img src="images/https://github.com/yevgeniymazur/grp109/blob/main/final_project/images/Instagram%20icon.png" alt="Instagram icon"></a>
+        </div>
     </footer>
 </body>
 </html>
