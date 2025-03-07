@@ -563,4 +563,63 @@ td[data-type="exhibit"] {
 .advanced {
   background-color: lightcoral !important;
 }
-/* YM end of code*/
+/* YM end of code for calendar*/
+
+/* YM css for gallery content*/
+/* Define Gallery Color Variables */
+:root {
+  --gallery-bg: #F7EEDD;           /* Light background */
+  --gallery-article-bg: #F6EDDA;    /* Slightly different light tone */
+  --gallery-border: #C4B7A5;        /* Neutral border color */
+  --gallery-accent: #C08865;        /* Accent color (used as needed) */
+  --gallery-text: #9D6142;          /* Dark text color */
+}
+
+/* Grid Layout for Gallery Content */
+#gallery-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+  gap: 20px;                           /* Space between grid items */
+  width: 90%;                          /* Container takes up 90% of the viewport */
+  margin: 20px auto;                   /* Center the container horizontally */
+  box-sizing: border-box;
+  background-color: var(--gallery-bg);
+  padding: 20px;                       /* Optional padding around the grid */
+}
+
+/* Gallery Article Styles */
+.gallery-article {
+  background-color: var(--gallery-article-bg);
+  padding: 10px;
+  border: 1px solid var(--gallery-border);
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: var(--gallery-text);
+}
+
+/* Gallery Feature Styles (if used) */
+.gallery-feature {
+  background-color: var(--gallery-article-bg);
+  padding: 10px;
+  border: 1px solid var(--gallery-border);
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: var(--gallery-text);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  #gallery-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  #gallery-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* End gallery content css*/
