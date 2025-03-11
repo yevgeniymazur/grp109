@@ -585,28 +585,24 @@ td[data-type="exhibit"] {
   box-sizing: border-box;
   background-color: var(--gallery-bg);
   padding: 20px;                       /* Optional padding around the grid */
+  grid-auto-rows: 200px;                /* Fixed row height for uniformity */
 }
 
 /* Gallery Article Styles */
 .gallery-article {
   background-color: var(--gallery-article-bg);
-  padding: 10px;
   border: 1px solid var(--gallery-border);
   border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  color: var(--gallery-text);
+  overflow: hidden;
+  position: relative;
 }
 
-/* Gallery Feature Styles (if used) */
-.gallery-feature {
-  background-color: var(--gallery-article-bg);
-  padding: 10px;
-  border: 1px solid var(--gallery-border);
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  color: var(--gallery-text);
+/* Make Images Fill the Container */
+.gallery-article img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container, cropping if needed */
+  display: block;
 }
 
 /* Responsive Adjustments */
@@ -622,4 +618,4 @@ td[data-type="exhibit"] {
   }
 }
 
-/* End gallery content css*/
+/* End gallery content css */
