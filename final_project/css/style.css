@@ -653,14 +653,8 @@ body {
   margin: 10px 0;
 }
 
-/* Set a background image just for the Classes page YM
-*/
-body {
-  background: url("../images/classes-bg.jpg") no-repeat center center fixed;
-  background-size: cover;
-}
 
-/* Classes Page Specific Styles */
+/* Classes Page Specific Styles YM */
 .classes-container {
   max-width: 600px;
   margin: 40px auto; /* Center the container with vertical spacing */
