@@ -474,7 +474,7 @@ select {
   text-align: center;
 }
 
-/* Calendar Table Styles */
+/* Calendar Table Styles YM */
 table.calendar {
   width: 100%;
   border-collapse: collapse;
@@ -495,7 +495,7 @@ table.calendar th {
   background: #f0f0f0;
 }
 
-/* Namespaced Calendar Cell States */
+/* Namespaced Calendar Cell States YM */
 td.rc-available {
   background-color: lightgreen;
   cursor: pointer;
@@ -511,12 +511,12 @@ td.rc-closed {
   border: 2px solid red;
 }
 
-/* Earthy Tone for Exhibit Cells */
+/* Earthy Tone for Exhibit Cells  YM */
 td[data-type="exhibit"] {
   background-color: burlywood;
 }
 
-/* Reservation Form Styling (unchanged) */
+/* Reservation Form Styling (unchanged) YM */
 .reservation-form {
   display: none;
   margin: 20px auto;
@@ -544,7 +544,7 @@ td[data-type="exhibit"] {
   padding: 8px 12px;
 }
 
-/* Namespaced Inner Calendar Elements */
+/* Namespaced Inner Calendar Elements YM */
 .rc-day-number {
   font-weight: bold;
 }
@@ -553,7 +553,7 @@ td[data-type="exhibit"] {
   font-size: 0.9em;
 }
 
-/* Color Coordination for Class Levels */
+/* Color Coordination for Class Levels  YM */
 .beginner {
   background-color: lightblue !important;
 }
@@ -566,7 +566,7 @@ td[data-type="exhibit"] {
 /* YM end of code for calendar*/
 
 /* YM css for gallery content*/
-/* Define Gallery Color Variables */
+/* Define Gallery Color Variables YM */
 :root {
   --gallery-bg: #F7EEDD;           /* Light background */
   --gallery-article-bg: #F6EDDA;   /* Slightly different light tone */
@@ -626,6 +626,30 @@ td[data-type="exhibit"] {
   }
 }
 
-/* End gallery content css */
+/* End gallery content css YM */
 
+/* Set a background image just for the Contact page YM */
+body {
+  background-image: url("images/contact-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Contact Page Specific Styles YM */
+.contact-container {
+  max-width: 600px;
+  margin: 40px auto; /* Centers the container and adds vertical spacing YM */
+  padding: 20px;
+  text-align: center; /* Center text within the container YM */
+  background: rgba(246, 237, 218, 0.9); /* Semi-transparent background for readability YM */
+  border: 1px solid #C4B7A5; /* Optional border for definition YM */
+  border-radius: 4px; /* Rounded corners YM */
+}
+
+.contact-container h1,
+.contact-container h2,
+.contact-container p {
+  margin: 10px 0;
+}
 
