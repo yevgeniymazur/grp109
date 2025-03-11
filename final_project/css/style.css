@@ -628,13 +628,7 @@ td[data-type="exhibit"] {
 
 /* End gallery content css YM */
 
-/* Set a background image just for the Contact page YM */
-body {
-  background-image: url("../images/contact-bg.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+
 
 /* Contact Page Specific Styles YM */
 .contact-container {
