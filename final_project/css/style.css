@@ -569,23 +569,23 @@ td[data-type="exhibit"] {
 /* Define Gallery Color Variables */
 :root {
   --gallery-bg: #F7EEDD;           /* Light background */
-  --gallery-article-bg: #F6EDDA;    /* Slightly different light tone */
-  --gallery-border: #C4B7A5;        /* Neutral border color */
-  --gallery-accent: #C08865;        /* Accent color (used as needed) */
-  --gallery-text: #9D6142;          /* Dark text color */
+  --gallery-article-bg: #F6EDDA;   /* Slightly different light tone */
+  --gallery-border: #C4B7A5;       /* Neutral border color */
+  --gallery-accent: #C08865;       /* Accent color (used as needed) */
+  --gallery-text: #9D6142;         /* Dark text color */
 }
 
 /* Grid Layout for Gallery Content */
 #gallery-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Three equal columns */
-  gap: 20px;                           /* Space between grid items */
-  width: 90%;                          /* Container takes up 90% of the viewport */
-  margin: 20px auto;                   /* Center the container horizontally */
+  gap: 20px;                             /* Space between grid items */
+  width: 90%;                            /* Container takes up 90% of the viewport */
+  margin: 20px auto;                     /* Center the container horizontally */
   box-sizing: border-box;
   background-color: var(--gallery-bg);
-  padding: 20px;                       /* Optional padding around the grid */
-  grid-auto-rows: 200px;                /* Fixed row height for uniformity */
+  padding: 20px;                         /* Optional padding around the grid */
+  /* Removed grid-auto-rows: 200px to let images define row height */
 }
 
 /* Gallery Article Styles */
@@ -597,12 +597,17 @@ td[data-type="exhibit"] {
   position: relative;
 }
 
-/* Make Images Fill the Container */
+/* Make Images Fill the Container Width */
 .gallery-article img {
   width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures the image covers the container, cropping if needed */
+  height: auto;     /* Preserve the aspect ratio of the original image */
   display: block;
+  /* Remove object-fit if you want to see the full image 
+     without cropping. If you prefer a uniform grid with 
+     cropped images, you can re-add:
+        height: 100%;
+        object-fit: cover; 
+     along with a fixed height in .gallery-article or grid-auto-rows. */
 }
 
 /* Responsive Adjustments */
@@ -619,3 +624,4 @@ td[data-type="exhibit"] {
 }
 
 /* End gallery content css */
+
