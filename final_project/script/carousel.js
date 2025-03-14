@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
   const carouselImage = document.getElementById("carousel-image");
   const carouselContainer = document.getElementById("carousel-container");
-  const timerCounter = document.getElementById("timer-counter");
+  const timerBar = document.getElementById("timer-bar");
   
   // Audio objects for manual navigation sounds
   const rewindSound = new Audio("sounds/rewind.mp3");
@@ -61,13 +61,14 @@ document.addEventListener("DOMContentLoaded", function() {
     updateImage();
   }
   
-  // Update the visual counter every second
+  // Update the progress bar width
   function updateCounter() {
     elapsedTime++;
     if (elapsedTime > intervalDuration) {
       elapsedTime = 0;
     }
-    timerCounter.textContent = `Elapsed Time: ${elapsedTime}s`;
+    const progressPercent = (elapsedTime / intervalDuration) * 100;
+    timerBar.style.width = progressPercent + "%";
   }
   
   // Start auto cycle and counter intervals
@@ -81,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
     clearInterval(autoInterval);
     clearInterval(counterInterval);
     elapsedTime = 0;
-    timerCounter.textContent = `Elapsed Time: ${elapsedTime}s`;
+    timerBar.style.width = "0%";
     startAutoCycle();
   }
   
