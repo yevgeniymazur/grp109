@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const timerCounter = document.getElementById("timer-counter");
   
   // Audio objects for manual navigation sounds
-  const rewindSound = new Audio("sounds/rewind.mp3");
+  const rewindSound = new Audio("sound/hyena-laugh_daniel-simion.mp3");
   const advanceSound = new Audio("sounds/advance.mp3");
   
   // Variables for combined timer
