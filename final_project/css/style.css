@@ -702,6 +702,7 @@ body.contact-page {
   align-items: center;
   justify-content: center;
   margin: 20px 0;
+  flex-direction: column;
 }
 
 #carousel-container {
@@ -716,9 +717,20 @@ body.contact-page {
   display: block;
 }
 
-/* Visual Counter adjacent to the carousel */
-#timer-counter {
-  margin-left: 20px;
-  font-size: 18px;
-  font-weight: bold;
+/* Timer Progress Bar Styles */
+#timer-progress {
+  width: 600px;      /* match carousel width */
+  height: 10px;      /* height of the progress bar */
+  border: 1px solid #000;
+  background-color: #eee;
+  margin-top: 10px;
+  position: relative;
 }
+
+#timer-bar {
+  height: 100%;
+  background-color: #76c7c0; /* A pleasant color for the progress */
+  width: 0%;
+  transition: width 1s linear; /* Smooth transition */
+}
+
