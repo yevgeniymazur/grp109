@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
   // Audio objects for manual navigation sounds
   const rewindSound = new Audio("sound/hyena-laugh_daniel-simion.mp3");
-  const advanceSound = new Audio("sounds/advance.mp3");
+  const advanceSound = new Audio("sound/Fast Forward-SoundBible.com-2077194936.mp3");
   
   // Variables for combined timer
   let elapsedTime = 0;
