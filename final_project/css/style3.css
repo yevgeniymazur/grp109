@@ -52,6 +52,7 @@ a:visited
 /* Mouseover effect on the link color , added animation*/
 a:hover {
   color: red; 
+  text-decoration: underline;
   animation: blink 0.5s step-end infinite; 
   animation-delay: 2s; 
 }
