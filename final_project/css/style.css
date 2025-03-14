@@ -613,8 +613,7 @@ td[data-type="exhibit"] {
 }
 /* end YM */
 /* Set a background image just for the Contact page YM */
-body.contact-page,
-body.gallery-page {
+body.contact-page {
   background-image: url("../images/contact-bg.png");
   background-size: cover;
   background-position: center;
