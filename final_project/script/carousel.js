@@ -27,7 +27,9 @@ document.addEventListener("DOMContentLoaded", function() {
     "images/pot23.jpg"
   ];
   let currentIndex = 0;
+  const intervalDuration = 3; // seconds for auto-advance
   
+  // Get DOM elements
   const carouselImage = document.getElementById("carousel-image");
   const carouselContainer = document.getElementById("carousel-container");
   const timerCounter = document.getElementById("timer-counter");
@@ -36,74 +38,70 @@ document.addEventListener("DOMContentLoaded", function() {
   const rewindSound = new Audio("sounds/rewind.mp3");
   const advanceSound = new Audio("sounds/advance.mp3");
   
-  // Interval and counter variables
-  let autoInterval;
-  let counterInterval;
+  // Variables for combined timer
   let elapsedTime = 0;
-  const intervalDuration = 3; // seconds
+  let combinedInterval;
   
-  // Function to update the carousel image based on currentIndex
+  // Update the carousel image
   function updateImage() {
     carouselImage.src = images[currentIndex];
     carouselImage.alt = `Carousel Image ${currentIndex + 1}`;
   }
   
-  // Auto-advance to next image
-  function nextImage() {
-    currentIndex = (currentIndex + 1) % images.length;
-    updateImage();
-    resetCounter();
-  }
-  
-  // Rewind to previous image (for manual click on left side)
-  function previousImage() {
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
-    updateImage();
-  }
-  
-  // Update the plain text counter every second
-  function updateCounter() {
+  // Combined tick function: update timer and change image when needed
+  function tick() {
     elapsedTime++;
-    if (elapsedTime > intervalDuration) {
+    // When elapsed time reaches the interval, change the image and reset the timer
+    if (elapsedTime >= intervalDuration) {
+      nextImage();
       elapsedTime = 0;
     }
     timerCounter.textContent = `Elapsed Time: ${elapsedTime}s`;
   }
   
-  // Start auto cycle and counter intervals
-  function startAutoCycle() {
-    autoInterval = setInterval(nextImage, intervalDuration * 1000);
-    counterInterval = setInterval(updateCounter, 1000);
+  // Function to advance to the next image
+  function nextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    updateImage();
   }
   
-  // Reset auto cycle and counter when a manual change occurs
-  function resetAutoCycle() {
-    clearInterval(autoInterval);
-    clearInterval(counterInterval);
+  // Function to go to the previous image
+  function previousImage() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    updateImage();
+  }
+  
+  // Start the combined interval timer
+  function startCombinedInterval() {
+    combinedInterval = setInterval(tick, 1000);
+  }
+  
+  // Reset the combined interval timer (used after manual navigation)
+  function resetCombinedInterval() {
+    clearInterval(combinedInterval);
     elapsedTime = 0;
     timerCounter.textContent = `Elapsed Time: ${elapsedTime}s`;
-    startAutoCycle();
+    startCombinedInterval();
   }
   
   // Event listener for manual navigation via clicks on the carousel image
   carouselContainer.addEventListener("click", function(e) {
     const rect = carouselContainer.getBoundingClientRect();
     const clickX = e.clientX - rect.left;
-    // Left half: rewind; right half: advance.
+    // If click is on the left half, rewind; on the right half, advance.
     if (clickX < rect.width / 2) {
       previousImage();
       rewindSound.play();
     } else {
-      currentIndex = (currentIndex + 1) % images.length;
-      updateImage();
+      nextImage();
       advanceSound.play();
     }
-    // Reset auto cycle and counter after manual navigation
-    resetAutoCycle();
+    // Reset the combined interval so the 3-second timer starts over
+    resetCombinedInterval();
   });
   
-  // Initialize carousel on page load
+  // Initialize the carousel and timer on page load
   updateImage();
-  startAutoCycle();
+  startCombinedInterval();
 });
 
