@@ -661,3 +661,55 @@ body.contact-page {
   font-weight: bold;
   color: #333;
 }
+/* Grid Layout for Gallery Content */
+#gallery-content {
+  display: grid;
+  /* Increase columns from 3 to 4 to make each image smaller YM*/
+  grid-template-columns: repeat(4, 1fr);
+  /* Slightly reduce the gap */
+  gap: 10px;                           
+  width: 90%;                          
+  margin: 20px auto;                   
+  box-sizing: border-box;
+  background-color: var(--gallery-bg);
+  padding: 20px;
+  
+  /* Set a fixed row height to ensure a uniform grid size */
+  grid-auto-rows: 180px; 
+}
+
+/* Gallery Article Styles */
+.gallery-article {
+  background-color: var(--gallery-article-bg);
+  border: 1px solid var(--gallery-border);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Make Images Fill the Container but Keep Uniform Size */
+.gallery-article img {
+  width: 100%;
+  height: 100%;        /* Matches the 180px row height */
+  object-fit: cover;   /* Crops the image to fill the box if aspect ratio differs */
+  display: block;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  /* Fewer columns on tablets for a comfortable size */
+  #gallery-content {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px; /* You can tweak this if needed */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Single column on very small screens */
+  #gallery-content {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 240px; /* A bit taller to show more of the image on phones */
+  }
+}
+
+/* End gallery content css YM */
