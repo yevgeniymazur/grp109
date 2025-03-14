@@ -1,3 +1,9 @@
+/**
+ * Fast Forward sound effect used in this project is provided by SoundBible.com.
+ * Licensed under Creative Commons Attribution 3.0 (CC BY 3.0).
+ * See https://creativecommons.org/licenses/by/3.0/ for license details.
+ */
+
 document.addEventListener("DOMContentLoaded", function() {
   // Array of carousel images using all your gallery pictures
   const images = [
