@@ -1,0 +1,469 @@
+/* Reset and Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    /*background-image:url("/images/image22.JPG");*/
+    background-position: right top;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Changed to 100% to fit within skill-item */
+    box-sizing: border-box; /* Added to include padding and border in width */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#feedback-message {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+/* Roles and Responsibilities Styles */
+.iteration-section {
+    margin-bottom: 2rem;
+    border: 1px solid #ddd; /* Added border */
+    padding: 1rem; /* Added padding */
+    border-radius: 8px; /* Added border radius */
+    background-color: #f9f9f9; /* Added background color */
+}
+
+.roles-responsibilities {
+    display: flex;
+    gap: 1rem; /* Adjust gap as needed */
+    flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+}
+
+.role-column {
+    flex: 1; /* Each column takes equal width */
+    min-width: 300px; /* Minimum width for each column */
+}
+/* Dropdown Navigation style Styles NL sample
+/////////////////////////////////////////////////*/
+        .nav-links .dropdown {
+            position: relative;
+        }
+
+        .nav-links .dropdown-toggle {
+            cursor: pointer;
+            position: relative;
+        }
+
+        .nav-links .dropdown-toggle::after {
+            content: ' ▼';
+            font-size: 0.7em;
+            margin-left: 5px;
+        }
+
+        .nav-links .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #F5EAE4;
+            min-width: 200px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+            border-radius: 4px;
+            padding: 10px 0;
+        }
+
+        .nav-links .dropdown:hover .dropdown-menu,
+        .nav-links .dropdown-menu.show {
+            display: block;
+        }
+
+        .nav-links .dropdown-menu a {
+            display: block;
+            padding: 10px 15px;
+            color: #666;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-links .dropdown-menu a:hover {
+            background-color: #D7C5C5;
+            color: #362424;
+        }
+
+        /* Mobile Responsive Styles */
+        @media (max-width: 768px) {
+            .nav-links .dropdown-menu {
+                position: static;
+                display: none;
+                background-color: #f9f9f9;
+                box-shadow: none;
+            }
+
+            .nav-links .dropdown-menu.show {
+                display: block;
+            }
+        }
+/*////////////////////////end of drop down navigation style/////////////////////////*/
+/* ///////////////////////Navigation Styles links N option 1 no drop down//////////////////////////////////////////////////////////////////////////////*/
+/* main navigation //////////////////////*/
+.navbar 
+{
+    background-color: #E4F5F4;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	position: sticky;
+	top: 0;
+}
+.nav-brand {
+	font-family: 'ArchivoNarrowRegular';
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #272d2d;
+    margin-bottom: 1rem;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #666;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+/*style for links when it is mouse over
+.nav-links a:hover,
+.nav-links a.active
+{
+    color: #5A2506;
+}
+*/
+/* footer social links*/
+.social
+{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;  /* Adjust the space between images */
+    margin-right: 20px;  /* Adjust the right margin if needed */
+}
+
+
+/* end of main nav style for main nav when it is mouse over*/
+img.artImage
+{
+  box-shadow: 4px 4px 4px #999;
+  transition: all 200ms ease-in-out;
+  width: 300px;
+  height: auto;
+}
+/* validation page images style*/
+img.artImage2
+{
+ box-shadow: 4px 4px 4px #999;
+ transition: all 200ms ease-in-out;
+ width: 400px;
+ height: auto;
+}
+/* hobby images style*/
+img.artImage22
+{
+	box-shadow: 4px 4px 4px #999;
+  transition: all 200ms ease-in-out;
+  width: 230px;
+  height: auto;
+}
+/* footer navigation Styles links 2025*/
+
+.foot-links a:hover,
+.foot-links a.active 
+{
+    color: #2f4f4f;
+    font-size: 14px;
+}
+.foot-links a 
+{
+    font-size: 14px;
+    text-decoration: none;
+    color: #777;
+    font-weight: 200;
+    transition: color 0.3s ease;
+}
+
+/* Isaac's Simple JS Styles */
+#container {
+    text-align: center;
+    background-color: purple;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+}
+#buttonMessage {
+    margin-top: 20px;
+    font-weight: bold;
+}
+/* Main Content Styles Welcome to My Portfolio section N*/
+.content 
+{
+    flex: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 1rem;
+}
+.content-section {
+    margin-bottom: 2rem;
+}
+/* Main Content Styles Welcome to My Portfolio section N*/
+.hero {
+    text-align: center;
+    padding: 3rem 0;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+/* Main Content Styles Welcome to My Portfolio section N*/
+.hero h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+/* Main Content Styles Welcome to My Portfolio section subtitle N*/
+.subtitle {
+    font-size: 1.2rem;
+    color: #666;
+}
+li
+{
+	    color: #666;
+}
+/* Main Content Styles about me section  N*/
+.about-me {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+/* Main Content Styles About me section header style  N*/
+.about-me h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+/* Main Content Styles About me section body style  N*/
+.profile-content {
+    display: flex;
+    gap: 2rem;
+}
+/* Main Content Styles About me section body style  N*/
+.profile-text p {
+    margin-bottom: 1rem;
+    color: #666;
+}
+/* Main Content Styles My Skills section body style  N*/
+.skills 
+{
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.skills h2 
+{
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+.skills-grid 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.skill-item {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 4px;
+    text-align: center;
+    color: #666;
+}
+.row {
+     display: flex;
+    gap: 20px;
+}
+.column {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+        }
+footer {
+    font-size: 12px;
+    background-color: #DFDEE4;
+    padding: 5px;
+    text-align: center;
+    color: #666;
+    box-shadow: 0 -2px 2px rgba(0,0,0,0.1);
+}
+/* Main content styles NL*/
+.main-content 
+{
+    flex: 1;
+    padding: 2rem 1rem;
+}
+/* Main content styles  first about me block NL*/
+.content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #EBF1F1;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    color: #444;
+    margin-bottom: 1rem;
+}
+p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+/* Content style for survey box Yevgeniy M*/
+.survey-container {
+  background-color: #fff;
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.survey-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.survey-question-text {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.survey-options {
+  margin-bottom: 15px;
+}
+
+.survey-options label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.survey-nav-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.survey-nav-buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.survey-nav-buttons button:hover {
+  background-color: #008080;
+}
+
+/*this code only for natalia selection for js selection starts here*/
+        .containerNL {
+            max-width: 500px;
+            margin: 10px auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .date-list {
+            margin-top: 10px;
+        }
+        .available {
+            color: green;
+            margin: 10px 0;
+        }
+        .unavailable {
+            color: red;
+            margin: 10px 0;
+        }
+        select {
+            padding: 5px;
+            margin-bottom: 15px;
+            width: 200px;
+        }
+        #dateContainerNL {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-top: 15px;
+        }
+/*natalia css for the data box ends here*/
