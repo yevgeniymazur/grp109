@@ -2,6 +2,9 @@
  * Fast Forward sound effect used in this project is provided by SoundBible.com.
  * Licensed under Creative Commons Attribution 3.0 (CC BY 3.0).
  * See https://creativecommons.org/licenses/by/3.0/ for license details.
+ * Rewind sound "Hyena Laughing" by SoundBible.com.
+ * Licensed under Creative Commons Attribution 3.0 (CC BY 3.0).
+ * Source: https://soundbible.com/2191-Hyena-Laughing.html
  */
 
 document.addEventListener("DOMContentLoaded", function() {
