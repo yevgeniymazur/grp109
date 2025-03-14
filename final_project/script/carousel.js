@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
     "images/pot23.jpg"
   ];
   let currentIndex = 0;
-  const intervalDuration = 3; // seconds for auto-advance
+  const intervalDuration = 4; // seconds for auto-advance
   
   // Get DOM elements
   const carouselImage = document.getElementById("carousel-image");
