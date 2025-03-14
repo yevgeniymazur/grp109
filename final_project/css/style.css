@@ -613,12 +613,14 @@ td[data-type="exhibit"] {
 }
 /* end YM */
 /* Set a background image just for the Contact page YM */
-body.contact-page {
+body.contact-page,
+body.gallery-page {
   background-image: url("../images/contact-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+
 /* Styles for the completion info div in the footer YM */
 #completionInfo {
   border: 3pt solid #000;
