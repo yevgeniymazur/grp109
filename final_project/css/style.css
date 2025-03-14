@@ -648,8 +648,8 @@ body.contact-page {
 }
 
 #carousel-image {
-  width: 600px;
-  height: 400px;
+  width: 800px;
+  height: 600px;
   object-fit: cover;
   display: block;
 }
