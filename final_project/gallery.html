@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home - Ember Ceramic</title>
-  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/en/face/archivo-narrow" type="text/css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="screen" href="https://fontlibrary.org/en/face/archivo-narrow" type="text/css">
 </head>
 <body>
   <script src="script/navigation.js"></script>
+  
   <!-- Navigation Section -->
   <nav class="navbar">
       <div class="nav-brand">Ember Ceramic</div>
@@ -43,103 +44,47 @@
           <li><a href="contact.html">Contact</a></li>
       </ul>
   </nav>
-
-  <!-- Gallery Content Section: Images arranged as a grid -->
-  <div id="gallery-content">
-      <div class="gallery-article">
-          <img src="images/pot1.png" alt="Image 1">
+  
+  <!-- Carousel Section (using all gallery images) -->
+  <section id="carousel-section">
+    <div id="carousel-container">
+      <!-- The image source will update dynamically -->
+      <img id="carousel-image" src="images/pot1.png" alt="Carousel Image 1">
+    </div>
+    <!-- Visual counter showing elapsed time until auto-advance -->
+    <div id="timer-counter">Elapsed Time: 0s</div>
+  </section>
+  
+  <!-- (Other content can follow here if needed) -->
+  
+  <!-- Footer -->
+  </main>
+  <footer>
+      <br>
+      <div class="foot-links">
+          <a href="index.html">Home</a> |
+          <a href="aboutstudio.html- ">Our Studio</a> |
+          <a href="services.html-">Studio Services</a> |
+          <a href="gallery_shop.html">Gallery & Shop</a> |
+          <a href="calendar.html">Studio Calendar</a> |
+          <br>© 2025 Ember Ceramic. All rights reserved.<br>
       </div>
-      <div class="gallery-article">
-          <img src="images/pot2.png" alt="Image 2">
+      <div class="social">
+          <a href="https://www.facebook.com/pottery" target="_blank">
+              <img src="images/icons/icon-facebook.png" alt="facebook icon">
+          </a>
+          <a href="https://www.pinterest.com/" target="_blank">
+              <img src="images/icons/icon-pinterest.png" alt="interest icon">
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+              <img src="images/icons/icon-twitter.png" alt="instagram icon">
+          </a>
       </div>
-      <div class="gallery-article">
-          <img src="images/pot3.png" alt="Image 3">
-      </div>
-      <div class="gallery-article">
-          <img src="images/pot4.png" alt="Image 4">
-      </div>
-      <div class="gallery-article">
-          <img src="images/pot5.png" alt="Image 5">
-      </div>
-      <div class="gallery-article">
-          <img src="images/pot6.png" alt="Image 6">
-      </div>
-      <div class="gallery-article">
-          <img src="images/pot7.png" alt="Image 7">
-      </div>
-      <div class="gallery-article">
-          <img src="images/pot8.png" alt="Image 8">
-      </div>
-      <div class="gallery-article">
-          <img src="images/pot9.png" alt="Image 9">
-      </div>
-      <div class="gallery-article">
-          <img src="images/pots_in_blue.png" alt="Image 10">
-      </div>
-      <div class="gallery-article">
-          <img src="images/pot10.png" alt="Image 11">
-      </div>
-      <div class="gallery-article">
-          <img src="images/pot11.jpg" alt="Image 12">
-      </div>
-      <div class="gallery-article">
-          <img src="images/pot12.jpg" alt="Image 13">
-      </div>
-      <div class="gallery-article">
-          <img src="images/pot13.jpg" alt="Image 14">
-      </div>
-      <div class="gallery-article">
-          <img src="images/pot14.jpg" alt="Image 15">
-      </div>
-      <div class="gallery-article">
-          <img src="images/pot15.jpg" alt="Image 16">
-      </div>
-      <div class="gallery-article">
-          <img src="images/pot16.jpg" alt="Image 17">
-      </div>
-      <div class="gallery-article">
-          <img src="images/pot17.jpg" alt="Image 18">
-      </div>
-      <div class="gallery-article">
-          <img src="images/pot18.jpg" alt="Image 19">
-      </div>
-      <div class="gallery-article">
-          <img src="images/pot19.jpg" alt="Image 20">
-      </div>
-      <div class="gallery-article">
-          <img src="images/pot20.jpg" alt="Image 21">
-      </div>
-      <div class="gallery-article">
-          <img src="images/pot21.jpg" alt="Image 22">
-      </div>
-      <div class="gallery-article">
-          <img src="images/pot22.jpg" alt="Image 23">
-      </div>
-      <div class="gallery-article">
-          <img src="images/pot23.jpg" alt="Image 24">
-      </div>
-  </div>
-
-    <!-- Footer -->
-    </main>
-    <footer>
-        <br><div class="foot-links">
-            <a href="index.html">Home</a> |
-            <a href="aboutstudio.html- ">Our Studio</a> |
-            <a href="services.html-">Studio Services</a> |
-            <a href="gallery_shop.html">Gallery & Shop</a> |
-            <a href="calendar.html">Studio Calendar</a> |
-        <br>© 2025 Ember Ceramic. All rights reserved.<br>
-	</div>
-			<div class="social">
-				<a href="https://www.facebook.com/pottery" target="_blank">
-				<img src="images/icons/icon-facebook.png" alt="facebook icon"></a>
-				<a href="https://www.pinterest.com/" target="_blank">
-				<img src="images/icons/icon-pinterest.png" alt="interest icon"></a>
-				<a href="https://www.instagram.com/" target="_blank">
-				<img src="images/icons/icon-twitter.png" alt="instagram icon"></a>
-			</div>
-    </footer>
+  </footer>
+  
+  <!-- External JavaScript file for carousel functionality -->
+  <script src="script/carousel.js"></script>
 </body>
 </html>
+
 
