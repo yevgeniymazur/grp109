@@ -696,3 +696,29 @@ body.contact-page {
   margin-left: 20px;
   font-weight: bold;
 } /*YM*/
+/* Carousel Section Styles */
+#carousel-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#carousel-container {
+  position: relative;
+  cursor: pointer;  /* Indicates the image is clickable */
+}
+
+#carousel-image {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Visual Counter adjacent to the carousel */
+#timer-counter {
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
