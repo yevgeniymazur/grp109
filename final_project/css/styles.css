@@ -4,7 +4,6 @@ body {
     font-family: 'ArchivoNarrowRegular', 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #f9f6f2;
-    /* In stylegit.css there was a commented-out background-image */
     background-position: right top;
     background-size: cover;
     min-height: 100vh;
