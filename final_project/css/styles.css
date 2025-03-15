@@ -980,4 +980,313 @@ body.calendar-page .reservation-form button {
   border: 1px solid #C4B7A5;
   border-radius: 4px;
 }
+/*###################################################################################################
+#####################################################################################################
+Isaacs about page css
+
+#####################################################################################################
+###################################################################################################*/
+/* aboutstudio.css - Chunk 1/4: Global Reset and Base Styles */
+body.about-page {
+  font-family: 'ArchivoNarrowRegular', 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f6f2;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+/* aboutstudio.css - Chunk 2/4: Navigation and Hero Section */
+body.about-page .navbar {
+  background-color: #F5EAE4;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+body.about-page .nav-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #82370C;
+  margin-bottom: 1rem;
+}
+
+body.about-page .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+body.about-page .nav-links a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+body.about-page .nav-links a:hover,
+body.about-page .nav-links a.active {
+  color: #5A2506;
+}
+
+/* Dropdown */
+body.about-page .dropdown {
+  position: relative;
+}
+
+body.about-page .dropdown-toggle {
+  cursor: pointer;
+  position: relative;
+}
+
+body.about-page .dropdown-toggle::after {
+  content: ' ▼';
+  font-size: 0.7em;
+  margin-left: 5px;
+}
+
+body.about-page .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #F5EAE4;
+  min-width: 200px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+  border-radius: 4px;
+  padding: 10px 0;
+}
+
+body.about-page .dropdown:hover .dropdown-menu,
+body.about-page .dropdown-menu.show {
+  display: block;
+}
+
+body.about-page .dropdown-menu a {
+  display: block;
+  padding: 10px 15px;
+  color: #666;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+body.about-page .dropdown-menu a:hover {
+  background-color: #D7C5C5;
+  color: #362424;
+}
+
+/* Hero Section */
+body.about-page .hero {
+  text-align: center;
+  padding: 6rem 0;
+  background-image: url("https://raw.githubusercontent.com/yevgeniymazur/grp109/refs/heads/main/final_project/images/clay.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+  border-radius: 0;
+  margin-bottom: 2rem;
+}
+
+body.about-page .hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+body.about-page .hero h1,
+body.about-page .hero p {
+  position: relative;
+  z-index: 2;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+body.about-page .hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+body.about-page .subtitle {
+  font-size: 1.5rem;
+  color: #fff;
+}
+/* aboutstudio.css - Chunk 3/4: Content and Newsletter Section */
+body.about-page .content {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Gallery Preview */
+body.about-page .gallery-preview {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+body.about-page .gallery-image {
+  flex: 0 0 calc(33.33% - 1rem);
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+body.about-page .gallery-image:hover {
+  transform: translateY(-5px);
+}
+
+body.about-page .gallery-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Skills Section */
+body.about-page .skills {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+body.about-page .skills h2 {
+  color: #82370C;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+body.about-page .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+body.about-page .skill-item {
+  background-color: #f9f6f2;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  color: #666;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body.about-page .skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Newsletter Section */
+body.about-page .container.newsletter-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  background: rgba(246, 237, 218, 0.9);
+  border: 1px solid #C4B7A5;
+  border-radius: 4px;
+}
+/* aboutstudio.css - Chunk 4/4: Footer and Responsive Styles */
+body.about-page footer {
+  background-color: #DFDEE4;
+  padding: 2rem 1rem;
+  text-align: center;
+  color: #666;
+  box-shadow: 0 -2px 2px rgba(0,0,0,0.1);
+}
+
+body.about-page .foot-links {
+  margin-bottom: 1rem;
+}
+
+body.about-page .foot-links a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #777;
+  font-weight: 200;
+  transition: color 0.3s ease;
+  padding: 0 10px;
+}
+
+body.about-page .foot-links a:hover,
+body.about-page .foot-links a.active {
+  color: #2f4f4f;
+}
+
+body.about-page .social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 1rem;
+}
+
+body.about-page .social img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+
+body.about-page .social img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body.about-page .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  body.about-page .nav-links .dropdown-menu {
+    position: static;
+    display: none;
+    background-color: #f9f9f9;
+    box-shadow: none;
+    padding: 0.5rem 0;
+  }
+  
+  body.about-page .nav-links .dropdown-menu.show {
+    display: block;
+  }
+  
+  body.about-page .hero {
+    padding: 4rem 0;
+  }
+  
+  body.about-page .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  body.about-page .subtitle {
+    font-size: 1.2rem;
+  }
+  
+  body.about-page .gallery-image {
+    flex: 0 0 100%;
+  }
+}
+
 
