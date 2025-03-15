@@ -960,3 +960,9 @@ td[data-type="exhibit"] {
   font-weight: bold;
   color: #333;
 }
+body.calendar-page {
+  background-image: url("../images/clay.jpg"); /* update the path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
