@@ -1,4 +1,5 @@
- document.addEventListener('DOMContentLoaded', function() {
+ //JavaScript for newsletter
+document.addEventListener('DOMContentLoaded', function() {
             const form = document.getElementById('newsletter-form');
            const emailInput = document.getElementById('email');
            const emailError = document.getElementById('email-error');
