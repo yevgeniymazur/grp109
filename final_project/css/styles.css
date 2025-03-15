@@ -80,7 +80,7 @@ body {
 
 .nav-links .dropdown:hover .dropdown-menu,
 .nav-links .dropdown-menu.show {
-    display: block;
+    display: block !important;
 }
 
 .nav-links .dropdown-menu a {
@@ -961,7 +961,7 @@ td[data-type="exhibit"] {
   color: #333;
 }
 body.calendar-page {
-  background-image: url("../images/clay.jpg"); /* update the path to your image */
+  background-image: url("../images/clay.jpg"); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
