@@ -859,21 +859,28 @@ button {
 }
 
 /* YM's Calendar Styles */
-/* Calendar Container Styles */
-.calendar-container {
+/* Calendar Page Background */
+body.calendar-page {
+  background-image: url("../images/mud.png"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* YM's Calendar Styles Scoped to Calendar Page */
+body.calendar-page .calendar-container {
   width: 80%;
   margin: 0 auto;
   text-align: center;
 }
 
-/* Calendar Table Styles YM */
-table.calendar {
+body.calendar-page table.calendar {
   width: 100%;
   border-collapse: collapse;
   margin: 20px auto;
 }
-table.calendar th,
-table.calendar td {
+body.calendar-page table.calendar th,
+body.calendar-page table.calendar td {
   border: 2px solid #ccc;  /* Increased border thickness YM */
   width: 14.28%;
   height: 100px;
@@ -881,25 +888,25 @@ table.calendar td {
   padding: 5px;
   position: relative;
 }
-table.calendar th {
+body.calendar-page table.calendar th {
   background: #f0f0f0;
 }
 
-/* Make empty cells have the same background as the navbar YM upadted*/
-table.calendar td:empty {
+/* Make empty cells have the same background as the navbar YM updated */
+body.calendar-page table.calendar td:empty {
   background-color: #F5EAE4;
 }
 
 /* Namespaced Calendar Cell States YM */
-td.rc-available {
+body.calendar-page td.rc-available {
   background-color: lightgreen;
   cursor: pointer;
 }
-td.rc-full {
+body.calendar-page td.rc-full {
   background-color: #ccc;
   cursor: not-allowed;
 }
-td.rc-closed {
+body.calendar-page td.rc-closed {
   background-color: #888;
   cursor: not-allowed;
   color: #fff;
@@ -907,12 +914,12 @@ td.rc-closed {
 }
 
 /* Earthy Tone for Exhibit Cells YM */
-td[data-type="exhibit"] {
+body.calendar-page td[data-type="exhibit"] {
   background-color: burlywood;
 }
 
 /* Reservation Form Styling YM */
-.reservation-form {
+body.calendar-page .reservation-form {
   display: none;
   margin: 20px auto;
   padding: 15px;
@@ -921,24 +928,23 @@ td[data-type="exhibit"] {
   background: #f9f9f9;
   text-align: left;
 }
-.reservation-form.active {
+body.calendar-page .reservation-form.active {
   display: block;
 }
-.reservation-form label {
+body.calendar-page .reservation-form label {
   display: block;
   margin-top: 10px;
 }
-.reservation-form input,
-.reservation-form select {
+body.calendar-page .reservation-form input,
+body.calendar-page .reservation-form select {
   width: 100%;
   padding: 5px;
   margin-top: 5px;
 }
-.reservation-form button {
+body.calendar-page .reservation-form button {
   margin-top: 10px;
   padding: 8px 12px;
 }
-
 
 /* YM's Carousel Section Styles */
 #carousel-section {
@@ -965,9 +971,4 @@ td[data-type="exhibit"] {
   font-weight: bold;
   color: #333;
 }
-body.calendar-page {
-  background-image: url("../images/mud.png"); 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+
