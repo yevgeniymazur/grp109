@@ -66,7 +66,7 @@ body {
 }
 /* Update z-index on drop down so its always infront of content YM */
 .nav-links .dropdown-menu {
-    display: none; 
+    display: none !important; 
     position: absolute;
     top: 100%;
     left: 0;
