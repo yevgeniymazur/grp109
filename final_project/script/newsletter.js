@@ -1,16 +1,15 @@
-// JavaScript for newsletter
 document.addEventListener('DOMContentLoaded', function() {
   const form = document.getElementById('newsletter-form');
   const emailInput = document.getElementById('email');
   const emailError = document.getElementById('email-error');
   const successMessage = document.getElementById('success-message');
-  
+
   form.addEventListener('submit', function(event) {
     event.preventDefault();
     
-    // Reset error message
+    // Reset the error message
     emailError.style.display = 'none';
-    
+
     let isValid = true;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(emailInput.value)) {
@@ -25,10 +24,10 @@ document.addEventListener('DOMContentLoaded', function() {
       successMessage.textContent = 'Thank you for subscribing to our newsletter!';
       successMessage.style.display = 'block';
       
-      console.log('Subscription submitted for:', {
-        email: emailInput.value
-      });
+      // Log the submitted email for debugging purposes
+      console.log('Subscription submitted for:', { email: emailInput.value });
     }
   });
 });
+
 
