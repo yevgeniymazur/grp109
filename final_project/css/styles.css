@@ -917,7 +917,7 @@ td[data-type="exhibit"] {
   display: none;
   margin: 20px auto;
   padding: 15px;
-  border: 2px solid #ccc;  /* Increased border here too */
+  border: 2px solid #ccc;  /* Increased border here too YM */
   width: 50%;
   background: #f9f9f9;
   text-align: left;
@@ -967,7 +967,7 @@ td[data-type="exhibit"] {
   color: #333;
 }
 body.calendar-page {
-  background-image: url("../images/clay.jpg"); 
+  background-image: url("../images/mud.png"); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
