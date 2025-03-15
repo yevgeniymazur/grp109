@@ -1,4 +1,4 @@
- /* Reset and Base Styles */
+/* Reset and Base Styles */
 /*Isaac's CSS for the service page*/
         body {
             font-family: 'ArchivoNarrowRegular', 'Arial', sans-serif;
@@ -21,7 +21,7 @@
         }
         
         .nav-brand {
-   font-family: 'ArchivoNarrowRegular', 'Arial', sans-serif;
+            font-family: 'ArchivoNarrowRegular', 'Arial', sans-serif;
             font-size: 1.5rem;
             font-weight: bold;
             color: #82370C;
@@ -219,10 +219,56 @@
             display: block;
         }
         
+        /* Newsletter Section */
+        .newsletter-section {
+            background-color: #f9f6f2;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        
+        .newsletter-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .newsletter-form {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .newsletter-form input {
+            flex: 1;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        
+        .newsletter-form button {
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 12px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        
+        .newsletter-form button:hover {
+            background-color: #4a3c30;
+        }
+        
+        .subscription-message {
+            margin-top: 15px;
+            font-weight: bold;
+            display: none;
+        }
         
         /* Footer Styles */
         footer {
-           background-color: #DFDEE4;
+          background-color: #DFDEE4;
             padding: 2rem 1rem;
             text-align: center;
             color: #666;
@@ -230,11 +276,11 @@
         }
         
         .foot-links {
-          margin-bottom: 1rem;
+             margin-bottom: 1rem;
         }
         
         .foot-links a {
-            font-size: 14px;
+           font-size: 14px;
             text-decoration: none;
             color: #777;
             font-weight: 200;
@@ -248,10 +294,7 @@
         }
         
         .social {
-              display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 1rem;
+            margin-top: 20px;
         }
         
         .social a {
@@ -262,19 +305,18 @@
         .social img {
             width: 32px;
             height: 32px;
-             transition: transform 0.3s ease;
+            transition: transform 0.3s;
         }
         
         .social img:hover {
-             transform: scale(1.1);
+            transform: scale(1.2);
         }
         
         /* Responsive Design */
-          @media (max-width: 768px) {
-            .nav-links {
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 15px 20px;
                 flex-direction: column;
-                gap: 0.5rem;
-            }
             }
             
             .nav-brand {
@@ -316,4 +358,4 @@
                 grid-template-columns: 1fr;
             }
         }
-
+ 
