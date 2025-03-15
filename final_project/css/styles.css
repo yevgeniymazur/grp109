@@ -1068,3 +1068,159 @@ body.index-page .container.newsletter-container {
   }
 }
 
+
+/*********************services*************************/
+
+body.services-page {
+  font-family: 'ArchivoNarrowRegular', 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f6f2;
+  background-position: right top;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+body.services-page .hero-section {
+  background-image: url('https://raw.githubusercontent.com/yevgeniymazur/grp109/refs/heads/main/final_project/images/Services.png');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  position: relative;
+}
+body.services-page .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+body.services-page .hero-content {
+  max-width: 800px;
+  text-align: center;
+  z-index: 2;
+  padding: 20px;
+}
+body.services-page .hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+body.services-page .hero-content p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+body.services-page .main-content {
+  padding: 50px 20px;
+}
+body.services-page .services-content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+body.services-page .services-content-section {
+  margin-bottom: 40px;
+}
+body.services-page .services-content-section h1 {
+  color: black;
+  margin-bottom: 25px;
+  font-size: 36px;
+}
+body.services-page .services-content-section h2 {
+  color: black;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+body.services-page .services-content-section p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+body.services-page .flex-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+body.services-page .text-content {
+  flex: 2;
+}
+body.services-page .image-content {
+  flex: 1;
+}
+body.services-page .image-content img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+body.services-page .gallery-section {
+  margin: 40px 0;
+}
+body.services-page .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+body.services-page .gallery-item {
+  cursor: pointer;
+  transition: transform 0.3s;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+body.services-page .gallery-item:hover {
+  transform: scale(1.03);
+}
+body.services-page .gallery-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+body.services-page .newsletter-section {
+  background-color: #f9f6f2;
+  padding: 50px 20px;
+  text-align: center;
+}
+body.services-page .newsletter-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  background: rgba(246, 237, 218, 0.9);
+  border: 1px solid #C4B7A5;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  body.services-page .hero-section {
+    padding: 4rem 0;
+  }
+  body.services-page .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  body.services-page .hero-content p,
+  body.services-page .hero-content .subtitle {
+    font-size: 1.2rem;
+  }
+  body.services-page .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  body.services-page .newsletter-form {
+    flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  body.services-page .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
