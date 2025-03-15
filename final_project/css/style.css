@@ -477,6 +477,7 @@ body.calendar-page {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  z-index: 0;
 }
 
 /* YM's Calendar Styles Scoped to Calendar Page */
