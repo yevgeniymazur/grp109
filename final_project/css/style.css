@@ -140,13 +140,14 @@ button {
         }
 /*////////////////////////end of drop down navigation style/////////////////////////*/
 /* ///////////////////////Navigation Styles links N option 1 no drop down////////////////////*/
-.navbar 
-{
+.navbar {
     background-color: #F5EAE4;
     padding: 1rem 2rem;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-	position: sticky;
-	top: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 }
 .nav-brand {
 	font-family: 'ArchivoNarrowRegular';
