@@ -350,14 +350,14 @@ li
     background-color: #f4f4f4;
     border-radius: 5px;
         }
-/*footer {
+footer {
     font-size: 12px;
     background-color: #DFDEE4;
     padding: 5px;
     text-align: center;
     color: #666;
     box-shadow: 0 -2px 2px rgba(0,0,0,0.1);
-}*/
+
 /* Main content styles NL*/
 .main-content 
 {
@@ -719,86 +719,4 @@ body.contact-page {
 }
 
 /* End gallery content css YM */
-/* footer navigation Styles links N option 1 no drop down*/
-.foot-links {
-    margin-bottom: 1rem;
-}
 
-.foot-links a {
-    font-size: 14px;
-    text-decoration: none;
-    color: #777;
-    font-weight: 200;
-    transition: color 0.3s ease;
-    padding: 0 10px;
-}
-
-.foot-links a:hover,
-.foot-links a.active {
-    color: #2f4f4f;
-}
-
-/* footer social links*/
-.social {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 1rem;
-}
-
-.social img {
-    width: 32px;
-    height: 32px;
-    transition: transform 0.3s ease;
-}
-
-.social img:hover {
-    transform: scale(1.1);
-}
-/* Footer Styles */
-footer {
-    background-color: #DFDEE4;
-    padding: 2rem 1rem;
-    text-align: center;
-    color: #666;
-    box-shadow: 0 -2px 2px rgba(0,0,0,0.1);
-    margin-top: auto;  /* Sticky footer */
-    font-size: 12px;
-}
-
-/* footer navigation Styles links N option 1 no drop down*/
-.foot-links {
-    margin-bottom: 1rem;
-}
-
-.foot-links a {
-    font-size: 14px;
-    text-decoration: none;
-    color: #777;
-    font-weight: 200;
-    transition: color 0.3s ease;
-    padding: 0 10px;
-}
-
-.foot-links a:hover,
-.foot-links a.active {
-    color: #2f4f4f;
-}
-
-/* footer social links*/
-.social {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 1rem;
-}
-
-.social img {
-    width: 32px;
-    height: 32px;
-    transition: transform 0.3s ease;
-}
-
-.social img:hover {
-    transform: scale(1.1);
-}
