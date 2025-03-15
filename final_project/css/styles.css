@@ -761,3 +761,202 @@ body.contact-page {
   background-position: center;
   background-repeat: no-repeat;
 }
+/* --- Missing Blocks --- */
+
+/* Contact Page Background Image */
+body.contact-page {
+  background-image: url("../images/contact-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Validation Page Images Style */
+img.artImage {
+  box-shadow: 4px 4px 4px #999;
+  transition: all 200ms ease-in-out;
+  width: 300px;
+  height: auto;
+}
+img.artImage2 {
+  box-shadow: 4px 4px 4px #999;
+  transition: all 200ms ease-in-out;
+  width: 400px;
+  height: auto;
+}
+img.artImage22 {
+  box-shadow: 4px 4px 4px #999;
+  transition: all 200ms ease-in-out;
+  width: 230px;
+  height: auto;
+}
+
+/* Isaac's Simple JS Styles */
+#container {
+    text-align: center;
+    background-color: purple;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+}
+#buttonMessage {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* YM's Contact Page Specific Styles */
+.contact-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  background: rgba(246, 237, 218, 0.9);
+  border: 1px solid #C4B7A5;
+  border-radius: 4px;
+}
+.contact-container h1,
+.contact-container h2,
+.contact-container p {
+  margin: 10px 0;
+}
+
+/* YM's Classes Page Specific Styles */
+.classes-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  background: rgba(246, 237, 218, 0.9);
+  border: 1px solid #C4B7A5;
+  border-radius: 4px;
+}
+.classes-container h1,
+.classes-container h2,
+.classes-container p {
+  margin: 10px 0;
+}
+
+/* Reservation Link Style */
+.reservation-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #C08865;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* YM's Calendar Styles */
+/* Calendar Container Styles */
+.calendar-container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Calendar Table Styles YM */
+table.calendar {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+table.calendar th,
+table.calendar td {
+  border: 1px solid #ccc;
+  width: 14.28%;
+  height: 100px;
+  vertical-align: top;
+  padding: 5px;
+  position: relative;
+}
+table.calendar th {
+  background: #f0f0f0;
+}
+
+/* Namespaced Calendar Cell States YM */
+td.rc-available {
+  background-color: lightgreen;
+  cursor: pointer;
+}
+td.rc-full {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+td.rc-closed {
+  background-color: #888;
+  cursor: not-allowed;
+  color: #fff;
+  border: 2px solid red;
+}
+
+/* Earthy Tone for Exhibit Cells YM */
+td[data-type="exhibit"] {
+  background-color: burlywood;
+}
+
+/* Reservation Form Styling YM */
+.reservation-form {
+  display: none;
+  margin: 20px auto;
+  padding: 15px;
+  border: 1px solid #ccc;
+  width: 50%;
+  background: #f9f9f9;
+  text-align: left;
+}
+.reservation-form.active {
+  display: block;
+}
+.reservation-form label {
+  display: block;
+  margin-top: 10px;
+}
+.reservation-form input,
+.reservation-form select {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+.reservation-form button {
+  margin-top: 10px;
+  padding: 8px 12px;
+}
+
+/* YM's Carousel Section Styles */
+#carousel-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+#carousel-container {
+  position: relative;
+  cursor: pointer;  /* Indicates the image is clickable YM */
+}
+#carousel-image {
+  width: 800px;
+  height: 600px;
+  object-fit: cover;
+  display: block;
+}
+
+/* YM's Plain Text Timer Styles */
+#timer-counter {
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
