@@ -66,6 +66,7 @@ body {
 }
 /* Update z-index on drop down so its always infront of content YM */
 .nav-links .dropdown-menu {
+    display: none; 
     position: absolute;
     top: 100%;
     left: 0;
@@ -76,7 +77,6 @@ body {
     border-radius: 4px;
     padding: 10px 0;
 }
-
 
 .nav-links .dropdown:hover .dropdown-menu,
 .nav-links .dropdown-menu.show {
@@ -95,6 +95,7 @@ body {
     background-color: #D7C5C5;
     color: #362424;
 }
+
 
 /* Footer Styles */
 footer {
