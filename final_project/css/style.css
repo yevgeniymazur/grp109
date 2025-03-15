@@ -466,91 +466,91 @@ select {
             margin-top: 15px;
         }
 /*natalia css for the data box ends here*/
-/* ym css for calendar */
-/* Calendar Container Styles */
-.calendar-container {
+/* Calendar Page Background */
+body.calendar-page {
+  background-image: url("../images/mud.png"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* YM's Calendar Styles Scoped to Calendar Page */
+body.calendar-page .calendar-container {
   width: 80%;
   margin: 0 auto;
   text-align: center;
 }
 
-/* Calendar Table Styles YM */
-table.calendar {
+body.calendar-page table.calendar {
   width: 100%;
   border-collapse: collapse;
   margin: 20px auto;
 }
-
-table.calendar th,
-table.calendar td {
-  border: 1px solid #ccc;
+body.calendar-page table.calendar th,
+body.calendar-page table.calendar td {
+  border: 2px solid #ccc;  /* Increased border thickness YM */
   width: 14.28%;
   height: 100px;
   vertical-align: top;
   padding: 5px;
   position: relative;
 }
-
-table.calendar th {
+body.calendar-page table.calendar th {
   background: #f0f0f0;
 }
 
+/* Make empty cells have the same background as the navbar YM updated */
+body.calendar-page table.calendar td:empty {
+  background-color: #F5EAE4;
+}
+
 /* Namespaced Calendar Cell States YM */
-td.rc-available {
+body.calendar-page td.rc-available {
   background-color: lightgreen;
   cursor: pointer;
 }
-td.rc-full {
+body.calendar-page td.rc-full {
   background-color: #ccc;
   cursor: not-allowed;
 }
-td.rc-closed {
+body.calendar-page td.rc-closed {
   background-color: #888;
   cursor: not-allowed;
   color: #fff;
   border: 2px solid red;
 }
 
-/* Earthy Tone for Exhibit Cells  YM */
-td[data-type="exhibit"] {
+/* Earthy Tone for Exhibit Cells YM */
+body.calendar-page td[data-type="exhibit"] {
   background-color: burlywood;
 }
 
 /* Reservation Form Styling YM */
-.reservation-form {
+body.calendar-page .reservation-form {
   display: none;
   margin: 20px auto;
   padding: 15px;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;  /* Increased border here too YM */
   width: 50%;
   background: #f9f9f9;
   text-align: left;
 }
-.reservation-form.active {
+body.calendar-page .reservation-form.active {
   display: block;
 }
-.reservation-form label {
+body.calendar-page .reservation-form label {
   display: block;
   margin-top: 10px;
 }
-.reservation-form input,
-.reservation-form select {
+body.calendar-page .reservation-form input,
+body.calendar-page .reservation-form select {
   width: 100%;
   padding: 5px;
   margin-top: 5px;
 }
-.reservation-form button {
+body.calendar-page .reservation-form button {
   margin-top: 10px;
   padding: 8px 12px;
-}
-
-/* Namespaced Inner Calendar Elements YM */
-.rc-day-number {
-  font-weight: bold;
-}
-.rc-marker {
-  margin-top: 5px;
-  font-size: 0.9em;
 }
 
 /* Color Coordination for Class Levels  YM */
