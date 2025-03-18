@@ -803,3 +803,54 @@ body.contact-page
   }
 }
 /* End gallery content css YM */
+/* code for the image size for the our team page layout NL*/
+.image-container {
+  width: 300px; /* Fixed width for the container */
+  height: 200px; /* Fixed height for the container */
+  overflow: hidden; /* Hide parts of the image that go outside the container */
+}
+
+.image-container img {
+  width: 100%;  /* Make the image fill the container's width */
+  height: 100%; /* Make the image fill the container's height */
+  object-fit: cover; /* This ensures the image doesn't get distorted and fills the container */
+}
+.container_team {
+  display: flex;
+  flex-direction: column; /* Stack the rows vertically */
+  gap: 40px; /* Space between the rows */
+  margin: 20px;
+}
+/* Row for image and text layout */
+.row_team {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between the image and text */
+}
+.image_column {
+  width: 30%; /* 30% width allocated to the images */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between images */
+}
+
+/* Text column our team */
+.text_column_team {
+  width: 70%; /* 70% width allocated to the text */
+  padding-left: 20px; /* Space between the image column and text */
+}
+@media screen and (max-width: 768px) {
+  .row_team {
+    flex-direction: column; /* Stack the image and text vertically on small screens */
+    align-items: center;
+  }
+
+  .image-column, .text-column {
+    width: 100%; /* Make the image and text take up full width on smaller screens */
+  }
+
+  .image-column img {
+    max-width: 100%; /* Ensure images scale down responsively */
+  }
+}
+/* end layout our team page columns*/
