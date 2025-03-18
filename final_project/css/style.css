@@ -1,17 +1,17 @@
 /* Reset and Base Styles */
-body {
+body 
+{
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    /*background-image:url("/images/image22.JPG");*/
-    background-position: right top;
+    /*background-image:url("/images/image22.JPG");
+    background-position: right top;*/
     background-size: cover;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
-
-
-.form-container {
+.form-container 
+{
     background-color: white;
     padding: 20px;
     border-radius: 8px;
@@ -20,18 +20,21 @@ body {
     box-sizing: border-box; /* Added to include padding and border in width */
 }
 
-.form-group {
+.form-group 
+{
     margin-bottom: 15px;
 }
 
-label {
+label 
+{
     display: block;
     margin-bottom: 5px;
 }
 
 input[type="text"],
 input[type="email"],
-textarea {
+textarea 
+{
     width: 100%;
     padding: 8px;
     border: 1px solid #ddd;
@@ -39,11 +42,13 @@ textarea {
     box-sizing: border-box;
 }
 
-textarea {
+textarea 
+{
     resize: vertical;
 }
 
-button {
+button 
+{
     background-color: #007bff;
     color: white;
     padding: 10px 15px;
@@ -52,14 +57,15 @@ button {
     cursor: pointer;
 }
 
-#feedback-message {
+#feedback-message 
+{
     margin-top: 20px;
     font-weight: bold;
     text-align: center;
 }
-
 /* Roles and Responsibilities Styles */
-.iteration-section {
+.iteration-section 
+{
     margin-bottom: 2rem;
     border: 1px solid #ddd; /* Added border */
     padding: 1rem; /* Added padding */
@@ -67,34 +73,36 @@ button {
     background-color: #f9f9f9; /* Added background color */
 }
 
-.roles-responsibilities {
+.roles-responsibilities 
+{
     display: flex;
     gap: 1rem; /* Adjust gap as needed */
     flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
 }
-
-.role-column {
+.role-column 
+{
     flex: 1; /* Each column takes equal width */
     min-width: 300px; /* Minimum width for each column */
 }
 /* Dropdown Navigation style Styles NL sample
 /////////////////////////////////////////////////*/
-        .nav-links .dropdown {
-            position: relative;
-        }
-
-        .nav-links .dropdown-toggle {
+.nav-links .dropdown 
+{
+ position: relative;
+}
+.nav-links .dropdown-toggle 
+{
             cursor: pointer;
             position: relative;
-        }
-
-        .nav-links .dropdown-toggle::after {
+ }
+ .nav-links .dropdown-toggle::after 
+{
             content: ' ▼';
             font-size: 0.7em;
             margin-left: 5px;
-        }
-
-        .nav-links .dropdown-menu {
+}
+.nav-links .dropdown-menu 
+{
     display: none !important; 
     position: absolute;
     top: 100%;
@@ -107,40 +115,47 @@ button {
     padding: 10px 0;
 }
 
-        .nav-links .dropdown:hover .dropdown-menu,
-.nav-links .dropdown-menu.show {
+.nav-links .dropdown:hover .dropdown-menu,
+.nav-links .dropdown-menu.show 
+{
     display: block !important;
 }
 
-        .nav-links .dropdown-menu a {
+.nav-links .dropdown-menu a 
+{
             display: block;
             padding: 10px 15px;
             color: #666;
             text-decoration: none;
             transition: background-color 0.3s ease;
-        }
-
-        .nav-links .dropdown-menu a:hover {
+}
+.nav-links .dropdown-menu a:hover 
+{
             background-color: #D7C5C5;
             color: #362424;
-        }
+}
 
         /* Mobile Responsive Styles */
-        @media (max-width: 768px) {
-            .nav-links .dropdown-menu {
+        @media (max-width: 768px) 
+{
+.nav-links .dropdown-menu 
+	{
                 position: static;
                 display: none;
                 background-color: #f9f9f9;
                 box-shadow: none;
-            }
 
-            .nav-links .dropdown-menu.show {
+ 	}
+.nav-links .dropdown-menu.show 
+	{
                 display: block;
-            }
-        }
+
+ 	}
+}
 /*////////////////////////end of drop down navigation style/////////////////////////*/
 /* ///////////////////////Navigation Styles links N option 1 no drop down////////////////////*/
-.navbar {
+.navbar 
+{
     background-color: #F5EAE4;
     padding: 1rem 2rem;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -148,33 +163,29 @@ button {
     top: 0;
     z-index: 1000;
 }
-}
-.nav-brand {
-	font-family: 'ArchivoNarrowRegular';
+
+.nav-brand 
+{
+    font-family: 'ArchivoNarrowRegular';
     font-size: 1.5rem;
     font-weight: bold;
     color: #82370C;
     margin-bottom: 1rem;
 }
-.nav-links {
+.nav-links 
+{
     list-style: none;
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
 }
-.nav-links a {
+.nav-links a 
+{
     text-decoration: none;
     color: #666;
     font-weight: 500;
     transition: color 0.3s ease;
 }
-/*style for links when it is mouse over
-.nav-links a:hover,
-.nav-links a.active
-{
-    color: #5A2506;
-}
-*/
 /* footer social links*/
 .social
 {
@@ -202,24 +213,24 @@ img.artImage2
 /* hobby images style*/
 img.artImage22
 {
-	box-shadow: 4px 4px 4px #999;
+  box-shadow: 4px 4px 4px #999;
   transition: all 200ms ease-in-out;
   width: 230px;
   height: auto;
 }
 /* footer navigation Styles links 2025*/
-.foot-links {
+.foot-links 
+{
     margin-bottom: 1rem;
 }
-
-
 .foot-links a:hover,
 .foot-links a.active 
 {
     color: #2f4f4f;
     font-size: 14px;
 }
-.foot-links a {
+.foot-links a 
+{
     font-size: 14px;
     text-decoration: none;
     color: #777;
@@ -229,14 +240,16 @@ img.artImage22
 }
 
 /* Isaac's Simple JS Styles */
-#container {
+#container 
+{
     text-align: center;
     background-color: purple;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-button {
+button 
+{
     padding: 10px 20px;
     background-color: #007bff;
     color: white;
@@ -244,15 +257,17 @@ button {
     border-radius: 4px;
     cursor: pointer;
 }
-#message {
+#message 
+{
     margin-top: 20px;
     font-weight: bold;
 }
-#buttonMessage {
+#buttonMessage 
+{
     margin-top: 20px;
     font-weight: bold;
 }
-/* Main Content Styles Welcome to My Portfolio section N*/
+/* Main Content Styles to My Portfolio section N*/
 .content 
 {
     flex: 1;
@@ -262,11 +277,34 @@ button {
     width: 100%;
     padding: 1rem;
 }
-.content-section {
+.content-section 
+{
     margin-bottom: 2rem;
 }
+/* about studio main content with image aligned */
+.aboutstudio
+{
+display: flex; 
+align-items: flex-start;
+}
+.studio
+{
+flex: 3;
+}
+.imgaboutstudio
+{
+margin-left: 20px;
+flex: 1;
+}
+.imgaboutstudio img 
+{
+  max-width: 274px;
+  height: 465px;
+}
+
 /* Main Content Styles Welcome to My Portfolio section N*/
-.hero {
+.hero 
+{
     text-align: center;
     padding: 3rem 0;
     background-color: #ffffff;
@@ -275,13 +313,15 @@ button {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 /* Main Content Styles Welcome to My Portfolio section N*/
-.hero h1 {
+.hero h1 
+{
     font-size: 2.5rem;
     color: #333;
     margin-bottom: 1rem;
 }
 /* Main Content Styles Welcome to My Portfolio section subtitle N*/
-.subtitle {
+.subtitle 
+{
     font-size: 1.2rem;
     color: #666;
 }
@@ -298,19 +338,21 @@ li
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 /* Main Content Styles About me section header style  N*/
-.about-me h2 {
+.about-me h2 
+{
     color: #333;
     margin-bottom: 1.5rem;
 }
 /* Main Content Styles About me section body style  N*/
-.profile-content {
+.profile-content 
+{
     display: flex;
     gap: 2rem;
 }
 /* Main Content Styles About me section body style  N*/
 .profile-text p {
-    margin-bottom: 1rem;
-    color: #666;
+ margin-bottom: 1rem;
+ color: #666;
 }
 /* Main Content Styles My Skills section body style  N*/
 .skills 
@@ -333,30 +375,34 @@ li
     gap: 1rem;
 }
 
-.skill-item {
+.skill-item 
+{
     background-color: #f8f9fa;
     padding: 1rem;
     border-radius: 4px;
     text-align: center;
     color: #666;
 }
-.row {
+.row 
+{
      display: flex;
     gap: 20px;
 }
-.column {
+.column 
+{
     flex: 1;
     padding: 20px;
     background-color: #f4f4f4;
     border-radius: 5px;
-        }
-footer {
+ }
+footer 
+{
     font-size: 12px;
     background-color: #F5EAE4;
     padding: 2rem 1rem;
     text-align: center;
     color: #666;
-box-shadow: 0 -2px 2px rgba(0,0,0,0.1);
+    box-shadow: 0 -2px 2px rgba(0,0,0,0.1);
     margin-top: auto; 
     width: 100%;
 }
@@ -367,7 +413,8 @@ box-shadow: 0 -2px 2px rgba(0,0,0,0.1);
     padding: 2rem 1rem;
 }
 /* Main content styles  first about me block NL*/
-.content-container {
+.content-container 
+{
     max-width: 1200px;
     margin: 0 auto;
     background-color: #ffffff;
@@ -376,16 +423,19 @@ box-shadow: 0 -2px 2px rgba(0,0,0,0.1);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+h1 
+{
     color: #333;
     margin-bottom: 1.5rem;
 }
 
-h2 {
+h2 
+{
     color: #444;
     margin-bottom: 1rem;
 }
-p {
+p 
+{
     color: #666;
     margin-bottom: 1rem;
 }
@@ -398,38 +448,40 @@ p {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-
-.survey-container h1 {
+.survey-container h1 
+{
   text-align: center;
   margin-bottom: 20px;
 }
-
-.survey-question-text {
+.survey-question-text 
+{
   font-size: 18px;
   margin-bottom: 15px;
 }
-
-.survey-options {
+.survey-options 
+{
   margin-bottom: 15px;
 }
 
-.survey-options label {
+.survey-options label 
+{
   display: block;
   margin-bottom: 8px;
 }
-
-select {
+select 
+{
   width: 100%;
   padding: 8px;
   font-size: 16px;
 }
-
-.survey-nav-buttons {
+.survey-nav-buttons 
+{
   text-align: center;
   margin-top: 20px;
 }
 
-.survey-nav-buttons button {
+.survey-nav-buttons button 
+{
   padding: 10px 20px;
   font-size: 16px;
   margin: 0 5px;
@@ -439,42 +491,48 @@ select {
   color: #fff;
   cursor: pointer;
 }
-
-.survey-nav-buttons button:hover {
+.survey-nav-buttons button:hover 
+{
   background-color: #008080;
 }
-
 /*this code only for natalia selection for js selection starts here*/
-        .containerNL {
+.containerNL 
+{
             max-width: 500px;
             margin: 10px auto;
             padding: 20px;
             font-family: Arial, sans-serif;
-        }
-        .date-list {
+}
+ .date-list 
+{
             margin-top: 10px;
-        }
-        .available {
+}
+.available 
+{
             color: green;
             margin: 10px 0;
-        }
-        .unavailable {
+}
+.unavailable 
+{
             color: red;
             margin: 10px 0;
-        }
-        select {
+}
+ select 
+{
             padding: 5px;
             margin-bottom: 15px;
             width: 200px;
-        }
-        #dateContainerNL {
+ }
+ #dateContainerNL 
+{
             border: 1px solid #ccc;
             padding: 15px;
             margin-top: 15px;
-        }
+}
 /*natalia css for the data box ends here*/
 /* Calendar Page Background */
-body.calendar-page {
+body.calendar-page 
+{
   background-image: url("../images/mud.png"); 
   background-size: cover;
   background-position: center;
@@ -483,13 +541,14 @@ body.calendar-page {
 }
 
 /* YM's Calendar Styles Scoped to Calendar Page */
-body.calendar-page .calendar-container {
+body.calendar-page .calendar-container 
+{
   width: 80%;
   margin: 0 auto;
   text-align: center;
 }
-
-body.calendar-page table.calendar {
+body.calendar-page table.calendar 
+{
   width: 100%;
   border-collapse: collapse;
   margin: 20px auto;
@@ -503,25 +562,30 @@ body.calendar-page table.calendar td {
   padding: 5px;
   position: relative;
 }
-body.calendar-page table.calendar th {
+body.calendar-page table.calendar th 
+{
   background: #f0f0f0;
 }
 
 /* Make empty cells have the same background as the navbar YM updated */
-body.calendar-page table.calendar td:empty {
+body.calendar-page table.calendar td:empty 
+{
   background-color: #F5EAE4;
 }
 
 /* Namespaced Calendar Cell States YM */
-body.calendar-page td.rc-available {
+body.calendar-page td.rc-available 
+{
   background-color: lightgreen;
   cursor: pointer;
 }
-body.calendar-page td.rc-full {
+body.calendar-page td.rc-full 
+{
   background-color: #ccc;
   cursor: not-allowed;
 }
-body.calendar-page td.rc-closed {
+body.calendar-page td.rc-closed 
+{
   background-color: #888;
   cursor: not-allowed;
   color: #fff;
@@ -529,12 +593,14 @@ body.calendar-page td.rc-closed {
 }
 
 /* Earthy Tone for Exhibit Cells YM */
-body.calendar-page td[data-type="exhibit"] {
+body.calendar-page td[data-type="exhibit"] 
+{
   background-color: burlywood;
 }
 
 /* Reservation Form Styling YM */
-body.calendar-page .reservation-form {
+body.calendar-page .reservation-form 
+{
   display: none;
   margin: 20px auto;
   padding: 15px;
@@ -543,39 +609,47 @@ body.calendar-page .reservation-form {
   background: #f9f9f9;
   text-align: left;
 }
-body.calendar-page .reservation-form.active {
+body.calendar-page .reservation-form.active 
+{
   display: block;
 }
-body.calendar-page .reservation-form label {
+body.calendar-page .reservation-form label 
+{
   display: block;
   margin-top: 10px;
 }
 body.calendar-page .reservation-form input,
-body.calendar-page .reservation-form select {
+body.calendar-page .reservation-form select 
+{
   width: 100%;
   padding: 5px;
   margin-top: 5px;
 }
-body.calendar-page .reservation-form button {
+body.calendar-page .reservation-form button 
+{
   margin-top: 10px;
   padding: 8px 12px;
 }
 
 /* Color Coordination for Class Levels  YM */
-.beginner {
+.beginner 
+{
   background-color: lightblue !important;
 }
-.intermediate {
+.intermediate 
+{
   background-color: khaki !important;
 }
-.advanced {
+.advanced 
+{
   background-color: lightcoral !important;
 }
 /* YM end of code for calendar*/
 /* Removed old gallery grid layout */
 
 /* Contact Page Specific Styles YM */
-.contact-container {
+.contact-container 
+{
   max-width: 600px;
   margin: 40px auto; /* Centers the container and adds vertical spacing YM */
   padding: 20px;
@@ -587,13 +661,13 @@ body.calendar-page .reservation-form button {
 
 .contact-container h1,
 .contact-container h2,
-.contact-container p {
+.contact-container p 
+{
   margin: 10px 0;
 }
-
-
 /* Classes Page Specific Styles YM */
-.classes-container {
+.classes-container 
+{
   max-width: 600px;
   margin: 40px auto; /* Center the container with vertical spacing */
   padding: 20px;
@@ -605,12 +679,14 @@ body.calendar-page .reservation-form button {
 
 .classes-container h1,
 .classes-container h2,
-.classes-container p {
+.classes-container p 
+{
   margin: 10px 0;
 }
 
 /* Style for the reservation link */
-.reservation-link {
+.reservation-link 
+{
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
@@ -621,41 +697,45 @@ body.calendar-page .reservation-form button {
 }
 /* end YM */
 /* Set a background image just for the Contact page YM */
-body.contact-page {
+body.contact-page 
+{
   background-image: url("../images/contact-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-
 /* Styles for the completion info div in the footer YM */
-#completionInfo {
+#completionInfo 
+{
   border: 3pt solid #000;
   background-color: #F5F8EE; 
   padding: 10px;
   margin-top: 20px;
   text-align: center;
 }
-
-#completionInfo #scrollingNames {
+#completionInfo #scrollingNames 
+{
   margin-left: 20px;
   font-weight: bold;
 } /*YM*/
 
 /* Carousel Section Styles YM */
-#carousel-section {
+#carousel-section 
+{
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 20px 0;
 }
 
-#carousel-container {
+#carousel-container 
+{
   position: relative;
   cursor: pointer;  /* Indicates the image is clickable YM */
 }
 
-#carousel-image {
+#carousel-image 
+{
   width: 800px;
   height: 600px;
   object-fit: cover;
@@ -663,14 +743,16 @@ body.contact-page {
 }
 
 /* Plain Text Timer Styles YM */
-#timer-counter {
+#timer-counter 
+{
   margin-left: 20px;
   font-size: 18px;
   font-weight: bold;
   color: #333;
 }
 /* Grid Layout for Gallery Content */
-#gallery-content {
+#gallery-content 
+{
   display: grid;
   /* Increase columns from 3 to 4 to make each image smaller YM*/
   grid-template-columns: repeat(4, 1fr);
@@ -681,13 +763,13 @@ body.contact-page {
   box-sizing: border-box;
   background-color: var(--gallery-bg);
   padding: 20px;
-  
   /* Set a fixed row height to ensure a uniform grid size */
   grid-auto-rows: 180px; 
 }
 
 /* Gallery Article Styles */
-.gallery-article {
+.gallery-article 
+{
   background-color: var(--gallery-article-bg);
   border: 1px solid var(--gallery-border);
   border-radius: 4px;
@@ -704,7 +786,8 @@ body.contact-page {
 }
 
 /* Responsive Adjustments */
-@media (max-width: 768px) {
+@media (max-width: 768px) 
+{
   /* Fewer columns on tablets for a comfortable size */
   #gallery-content {
     grid-template-columns: repeat(3, 1fr);
@@ -719,7 +802,4 @@ body.contact-page {
     grid-auto-rows: 240px; /* A bit taller to show more of the image on phones */
   }
 }
-
 /* End gallery content css YM */
-
-
