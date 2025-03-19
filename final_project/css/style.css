@@ -895,8 +895,8 @@ body.contact-page
 
 /* Make Images Fill the Container but Keep Uniform Size */
 .gallery-article_small img {
-  width: 100%;  /* Make the image fill the container's width */
-  height: 100%; /* Make the image fill the container's height */
+  width: 100px;  /* Make the image fill the container's width */
+  height: 100px; /* Make the image fill the container's height */
   object-fit: cover; /* image doesn't get distorted and fills the container */
   display: block;
 }
