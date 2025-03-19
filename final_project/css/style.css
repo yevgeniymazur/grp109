@@ -839,6 +839,19 @@ body.contact-page
   width: 70%; /* 70% width allocated to the text */
   padding-left: 20px; /* Space between the image column and text */
 }
+
+/* 30% width allocated to the images */
+.image_column_video {
+  width: 50%; 
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between images */
+}
+/* Text column our team */
+.text_column_team_video {
+  width: 50%; /* 50% width allocated to the text */
+  padding-left: 20px; /* Space between the image column and text */
+}
 @media screen and (max-width: 768px) {
   .row_team {
     flex-direction: column; /* Stack the image and text vertically on small screens */
