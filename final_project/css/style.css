@@ -867,3 +867,36 @@ body.contact-page
   }
 }
 /* end layout our team page columns*/
+* Grid Layout for Gallery and Shop Content small images NL*/
+#gallery-content_small 
+{
+  display: grid;
+  /* Increase columns from 3 to 4 to make each image smaller */
+ grid-template-columns: repeat(4,1fr);
+  /* Slightly reduce the gap */
+  gap: 5px;                                                    
+  margin: 5px auto;                   
+  box-sizing: border-box;
+  padding: 5px;
+  /* Set a fixed row height to ensure a uniform grid size */
+  grid-auto-rows: auto; 
+  width: 100%; /* Fixed width for the container */
+  height: auto; /* Fixed height for the container */
+  overflow: hidden; /* Hide parts of the image that go outside the container */
+}
+
+/* Gallery Article Styles */
+.gallery-article_small 
+{
+  border-radius: 1px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Make Images Fill the Container but Keep Uniform Size */
+.gallery-article_small img {
+  width: 100%;  /* Make the image fill the container's width */
+  height: 100%; /* Make the image fill the container's height */
+  object-fit: cover; /* image doesn't get distorted and fills the container */
+  display: block;
+}
