@@ -736,8 +736,8 @@ body.contact-page
 
 #carousel-image 
 {
-  width: 800px;
-  height: 600px;
+  width: 700px;
+  height: 500px;
   object-fit: cover;
   display: block;
 }
