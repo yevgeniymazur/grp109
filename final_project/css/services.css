@@ -48,7 +48,7 @@ body {
 
 .navbar a,
 .nav-links a {
-    color: #666
+    color: #5A2506;
     text-decoration: none;
     padding: 10px 15px;
     font-size: 1.1rem;
@@ -105,7 +105,7 @@ body {
 
 .dropdown-menu a {
     padding: 10px 15px;
-    color: #666;
+    color: #5A2506;
     display: block;
     border-bottom: 1px solid #eee8e1;
     font-size: 0.95rem;
