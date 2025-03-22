@@ -1,7 +1,7 @@
 /* Reset and Base Styles */
 /*Isaac's CSS for the service page*/
 body {
-    font-family: 'ArchivoNarrowRegular', 'Arial', sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #f9f6f2;
     min-height: 100vh;
@@ -25,7 +25,7 @@ body {
 }
 
 .nav-brand {
-    font-family: 'ArchivoNarrowRegular', 'Arial', sans-serif;
+    font-family: 'ArchivoNarrowRegular';
     font-size: 1.5rem;
     font-weight: bold;
     color: #82370C;
