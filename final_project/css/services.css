@@ -14,7 +14,7 @@ body {
 /* Navbar Styles */
 .navbar {
     background-color: #F5EAE4;
-    padding: 0.5rem 2rem;
+     padding: 1rem 2rem;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
@@ -48,7 +48,7 @@ body {
 
 .navbar a,
 .nav-links a {
-    color: #82370C;
+    color: #666
     text-decoration: none;
     padding: 10px 15px;
     font-size: 1.1rem;
@@ -85,7 +85,7 @@ body {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #f9f6f2;
+    background-color: #F5EAE4;
     min-width: 180px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.1);
     z-index: 1001;
@@ -105,7 +105,7 @@ body {
 
 .dropdown-menu a {
     padding: 10px 15px;
-    color: #82370C;
+    color: #666;
     display: block;
     border-bottom: 1px solid #eee8e1;
     font-size: 0.95rem;
@@ -181,7 +181,7 @@ body {
 }
 
 h1 {
-    color: black;
+    color: #82370C;
     margin-bottom: 25px;
     font-size: 36px;
 }
