@@ -11,37 +11,33 @@ body {
 
 /* Navbar Styles */
 .navbar {
-   .navbar {
-    background-color: #f9f6f2; /* Lighter background to match second image */
-    padding: 1rem 2rem;
+    background-color: #F5EAE4;
+     padding: 1rem 2rem;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     
 }
 
 .nav-brand {
-   font-family: 'Arial', sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
     color: #82370C;
-    margin-bottom: 0; /* Remove bottom margin */
+     margin-bottom: 1rem;
 }
 
 .nav-links {
-   list-style: none;
-    display: flex;
-    gap: 1.5rem;
-    margin: 0; /* Remove default margin */
+    list-style: none;
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
 }
 
 .nav-links li {
     position: relative;
-    margin: 0;
+    margin: 0 5px;
 }
 
 .navbar a,
@@ -49,7 +45,7 @@ body {
     color: #5A2506;
     text-decoration: none;
     padding: 10px 15px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 500;
     transition: color 0.3s ease;
     display: block;
@@ -146,7 +142,6 @@ body {
 }
 
 .hero-content h1 {
-    color: white; /* Ensure the heading is white */
     font-size: 48px;
     margin-bottom: 20px;
 }
