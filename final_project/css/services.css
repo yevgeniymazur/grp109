@@ -1,12 +1,14 @@
 /* Reset and Base Styles */
 /*Isaac's CSS for the service page*/
 body {
-    font-family: 'Arial', sans-serif;
+       font-family:  'Arial', sans-serif;
     line-height: 1.6;
     background-color: #f9f6f2;
+  background-position: right top;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 
 /* Navbar Styles */
@@ -145,10 +147,11 @@ body {
 .hero-content h1 {
     font-size: 48px;
     margin-bottom: 20px;
+   color:white ;
 }
 
 .hero-content p {
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 30px;
 }
 
