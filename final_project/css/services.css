@@ -384,7 +384,12 @@ textarea:focus {
     font-weight: bold;
     color: #82370C;
 }
-
+.contact-btn a:hover,
+.contact-btn a 
+{
+    color: #2f4f4f;
+    font-size: 14px;
+}
 .quantity-input {
     width: 50px;
     height: 30px;
